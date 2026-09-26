@@ -1,0 +1,44 @@
+[
+  {
+    "label": "A. Naive RAG",
+    "n_queries": 200,
+    "recall_at_k": 0.81,
+    "rouge_l_mean": 0.3299,
+    "rouge_l_answered": 0.3299,
+    "ece": 0.0384,
+    "avg_confidence": 0.6711,
+    "abstention_rate": 0.0,
+    "precision_answered": 0.7,
+    "n_answered": 200,
+    "low_conf_rate": 0.0,
+    "latency_mean_s": 12.26
+  },
+  {
+    "label": "B. Hybrid RAG (no abstain)",
+    "n_queries": 200,
+    "recall_at_k": 0.795,
+    "rouge_l_mean": 0.2983,
+    "rouge_l_answered": 0.3208,
+    "ece": 0.3094,
+    "avg_confidence": 0.3786,
+    "abstention_rate": 0.0,
+    "precision_answered": 0.7366,
+    "n_answered": 186,
+    "low_conf_rate": 0.16,
+    "latency_mean_s": 38.29
+  },
+  {
+    "label": "C. Conf-Aware RAG (Proposed)",
+    "n_queries": 200,
+    "recall_at_k": 0.795,
+    "rouge_l_mean": 0.2803,
+    "rouge_l_answered": 0.3337,
+    "ece": 0.2594,
+    "avg_confidence": 0.3786,
+    "abstention_rate": 0.16,
+    "precision_answered": 0.756,
+    "n_answered": 168,
+    "low_conf_rate": 0.16,
+    "latency_mean_s": 37.7
+  }
+]

@@ -1,0 +1,1525 @@
+query,query_type,gold_cve_id,retrieved_ids,recall_at_k,rouge_l,confidence,conf_label,correct,abstained,answer,gold_answer,latency_s
+Linux Linux kernel rose_ioctl,product,CVE-2023-51782,CVE-2023-51782|CVE-2023-53329|CVE-2023-32629|CVE-2023-53059|CVE-2023-54190,1.0,0.0738,0.8241,HIGH,0,0,"Based on the provided CVE context, here are the answers:
+
+[1] CVE-2023-51782:
+- Vulnerability: Use-after-free due to a race condition in `rose_ioctl` in `net/rose/af_rose.c`.
+- Affected component: Linux kernel.
+- Severity: HIGH (CVSS: 7.0).
+- Impact: This vulnerability could potentially allow an att",An issue was discovered in the Linux kernel before 6.6.8. rose_ioctl in net/rose/af_rose.c has a use-after-free because of a rose_accept race condition.,14.25
+PDF-XChange Out-Of-Bounds Disclosure PDF-XChange ZDI-CAN-21878,technical,CVE-2023-42081,CVE-2023-39487|CVE-2023-42073|CVE-2023-42070|CVE-2023-40473|CVE-2023-42081,1.0,0.4852,0.3705,MODERATE,1,0,"The vulnerability is an EMF File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. 
+
+Affected component: PDF-XChange Editor.
+
+Severity: MEDIUM.
+
+Impact: Remote attackers can disclose sensitive information on affected installations of PDF-XChange Editor by visiting a malicious page or ",PDF-XChange Editor EMF File Parsing Out-Of-Bounds Read Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected installations of PDF-XChange Editor. User interaction is required to exploit this vulnerability in that the target mus,3.65
+HIGH execution escalation NVIDIA A100 SBIOS,vuln_type,CVE-2023-31035,CVE-2023-31035|CVE-2023-31032|CVE-2023-0206|CVE-2023-0202|CVE-2023-25521,1.0,0.2474,0.3435,MODERATE,1,0,"Based on the provided CVE context:
+
+The HIGH execution escalation vulnerability in NVIDIA A100 SBIOS is related to a weakness in proper input parameter validation. 
+
+- Vulnerability Type: Execution with unnecessary privileges
+- Affected Component: NVIDIA DGX A100/A800 SBIOS
+- Severity: HIGH
+- Impact","NVIDIA DGX A100 SBIOS contains a vulnerability where an attacker may cause an SMI callout vulnerability that could be used to execute arbitrary code at the SMM level. A successful exploit of this vulnerability may lead to code execution, denial of service, escalation of privileges, and information d",2.98
+26.0.9 27.1.4 23.0.12.13 24.0.12.9 25.0.13.4,technical,CVE-2023-49791,CVE-2023-49792|CVE-2023-3896|CVE-2023-49791|CVE-2023-41927|CVE-2023-39958,1.0,0.0,0.0,LOW,0,1,"Based on the provided CVEs, here are the answers:
+
+1. 26.0.9 and 27.1.4:
+   - Vulnerability: CWE-307 (Incorrect Authentication)
+   - Affected component: Nextcloud Server
+   - Severity: MEDIUM
+   - Impact: An attacker could trick the server into reading a wrong remote address, allowing them to execut","Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. In Nextcloud Server prior to versions 26.0.9 and 27.1.4; as well as Nextcloud Enterprise Server prior to versions 23.0.12.13, 24.0.12.9, 25.0.13.4, 26.0.9, and 27.1.4; when an attacker manages to get access to an ac",7.85
+HIGH overflow 0.4.7 overflow parseSWF_DEFINEFONTINFO libming,vuln_type,CVE-2023-36239,CVE-2023-36239|CVE-2023-40781|CVE-2023-31976|CVE-2023-50628|CVE-2023-38560,1.0,0.4,0.5751,MODERATE,1,0,"The HIGH overflow vulnerability in libming version 0.4.7 is due to a buffer overflow in the `parseSWF_DEFINEFONTINFO()` function at parser.c.
+
+- Vulnerability Type: Buffer Overflow
+- Affected Component: libming (version 0.4.7)
+- Severity: HIGH
+- Impact: Allows remote attackers to cause a denial of s",libming listswf 0.4.7 was discovered to contain a buffer overflow in the parseSWF_DEFINEFONTINFO() function at parser.c.,3.12
+MEDIUM disclosure execution fastDial disclosure execution,vuln_type,CVE-2023-33893,CVE-2023-33892|CVE-2023-33894|CVE-2023-33893|CVE-2023-33895|CVE-2023-21227,1.0,0.3182,0.3339,MODERATE,1,0,"The vulnerabilities are related to missing permission checks in the fastDial service.
+
+- The vulnerability is a local information disclosure with no additional execution privileges needed.
+- The affected components are the fastDial service.
+- The severity of these vulnerabilities is MEDIUM (CVE-2023","In fastDial service, there is a missing permission check. This could lead to local information disclosure with no additional execution privileges needed.",3.18
+14.5 14.6 14.7 HTTP CVSS,technical,CVE-2023-21906,CVE-2023-21915|CVE-2023-29489|CVE-2023-21906|CVE-2023-29406|CVE-2023-21905,1.0,0.244,0.0,LOW,1,0,"Based on the provided CVE context:
+
+For CVE-2023-21915:
+- Vulnerability: Easily exploitable vulnerability allows low privileged attacker with network access via HTTP to compromise Oracle Banking Payments.
+- Affected component: Book/Internal Transfer
+- Severity: MEDIUM
+- Impact: Confidentiality and I","Vulnerability in the Oracle Banking Virtual Account Management product of Oracle Financial Services Applications (component: SMS Module).  Supported versions that are affected are 14.5, 14.6 and  14.7. Easily exploitable vulnerability allows high privileged attacker with network access via HTTP to c",9.75
+UNKNOWN corruption NULL corruption 62.624003 NULL,vuln_type,CVE-2023-54094,CVE-2023-53861|CVE-2023-54094|CVE-2023-53732|CVE-2023-53786|CVE-2023-54010,1.0,0.0923,0.296,MODERATE,0,0,"Based on the provided CVE context, here are the vulnerabilities with their corresponding information:
+
+[1] CVE-2023-53861
+- Severity: UNKNOWN
+- CVSS: nan
+- Description: The Linux kernel has resolved a vulnerability in the ext4 file system. Specifically, group corruption check will access memory of g","In the Linux kernel, the following vulnerability has been resolved:
+
+net: prevent skb corruption on frag list segmentation
+
+Ian reported several skb corruptions triggered by rx-gro-list,
+collecting different oops alike:
+
+[   62.624003] BUG: kernel NULL pointer dereference, address: 00000000000000c0
+",13.93
+MEDIUM Scripting PHPJabbers v1.0 Cross-Site Scripting,vuln_type,CVE-2023-51306,CVE-2023-34869|CVE-2023-51328|CVE-2023-40751|CVE-2023-51337|CVE-2023-36313,0.0,0.2813,0.48,MODERATE,1,0,"The PHPJabbers v1.0 software contains a MEDIUM-level cross-site scripting (XSS) vulnerability.
+
+- The vulnerability is in the ""Export Requests"" aside from ""request_feed"".
+- The affected component is PHPJabbers Document Creator v1.0.
+- Severity: MEDIUM
+- Impact: CVSS score of 6.1, CWE-79.","PHPJabbers Event Ticketing System v1.0 is vulnerable to Multiple Stored Cross-Site Scripting (XSS) in the ""name, title"" parameters.",2.81
+FortiSIEM 6.7.0 6.7.4 6.6.0 6.6.3,technical,CVE-2023-40723,CVE-2023-40714|CVE-2023-26204|CVE-2023-41677|CVE-2023-45583|CVE-2023-45585,0.0,0.2303,0.3051,MODERATE,1,0,"Based on the provided CVE context:
+
+For FortiSIEM versions 6.7.0, 6.7.4, and 6.6.0/6.6.3:
+
+* Vulnerability: A relative path traversal in GUI elements
+* Affected component: Fortinet FortiSIEM
+* Severity: CRITICAL (CVSS: 9.9)
+* Impact: Allows attacker to escalate privilege via uploading certain GUI el",An exposure of sensitive information to an unauthorized actor in Fortinet FortiSIEM version 6.7.0 through 6.7.4 and 6.6.0 through 6.6.3 and 6.5.0 through 6.5.1 and 6.4.0 through 6.4.2 and 6.3.0 through 6.3.3 and 6.2.0 through 6.2.1 and 6.1.0 through 6.1.2 and 5.4.0 and 5.3.0 through 5.3.3 and 5.2.5 ,4.52
+overflow formIpQoS rtl819x v3.4.11 HTTP,technical,CVE-2023-50243,CVE-2023-50244|CVE-2023-50243|CVE-2023-41251|CVE-2023-49073|CVE-2023-45742,1.0,0.3333,0.3375,MODERATE,1,0,"The overflow in formIpQoS rtl819x v3.4.11 is a stack-based buffer overflow vulnerability related to the `entry_name` request's parameter.
+
+- Vulnerability Type: Stack-based buffer overflow
+- Affected Component: Realtek rtl819x Jungle SDK v3.4.11 (specifically, the boa formIpQoS functionality)
+- Seve",Two stack-based buffer overflow vulnerabilities exist in the boa formIpQoS functionality of Realtek rtl819x Jungle SDK v3.4.11. A specially crafted series of HTTP requests can lead to remote code execution. An attacker can send a series of HTTP requests to trigger these vulnerabilities.This stack-ba,3.29
+BEAR WordPress Cross-Site Forgery 1.1.3.3,technical,CVE-2023-4935,CVE-2023-4935|CVE-2023-4937|CVE-2023-33314|CVE-2023-4942|CVE-2023-4926,1.0,0.535,0.4264,MODERATE,1,0,"Here are the answers to your question:
+
+1. What is the vulnerability?
+Cross-Site Request Forgery (CSRF)
+
+2. Which components are affected?
+The BEAR for WordPress plugin versions up to and including 1.1.3.3.
+
+3. Severity of the vulnerability?
+MEDIUM, with a CVSS score of 4.3 or 5.4 depending on the C","The BEAR for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 1.1.3.3. This is due to missing or incorrect nonce validation on the create_profile function. This makes it possible for unauthenticated attackers to create profiles via a forged request granted they",4.34
+MEDIUM injection injection QNAP 5.1.5.2645 20240116,vuln_type,CVE-2023-50358,CVE-2023-47218|CVE-2023-47568|CVE-2023-47566|CVE-2023-23356|CVE-2023-47567,0.0,0.2111,0.3358,MODERATE,1,0,"Based on the provided CVE context, I can answer as follows:
+
+The vulnerability is a MEDIUM-level OS command injection vulnerability (CVE-2023-47218).
+
+The affected component is QTS 5.1.5.2645 build 20240116.
+
+The severity of this vulnerability is MEDIUM with a CVSS score of 5.8.
+
+If exploited, the v","An OS command injection vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow users to execute commands via a network.
+
+We have already fixed the vulnerability in the following versions:
+QTS 5.1.5.2645 build 20240116 and later
+Q",3.95
+Bonus WordPress Reflected Bonus plugin,product,CVE-2023-5140,CVE-2023-5140|CVE-2023-23677|CVE-2023-5354|CVE-2023-34023|CVE-2023-5210,1.0,0.32,0.6701,HIGH,1,0,"Based on CVE-2023-5140, here is the answer:
+
+The vulnerability is a Reflected Cross-Site Scripting (XSS) vulnerability.
+
+The affected component is the ""Bonus for Woo"" WordPress plugin.
+
+The severity of this vulnerability is MEDIUM.
+
+The impact of this vulnerability is that it could be used against h","The Bonus for Woo WordPress plugin before 5.8.3 does not sanitise and escape some parameters before outputting them back in pages, leading to Reflected Cross-Site Scripting which could be used against high privilege users such as admin.",2.91
+UNKNOWN memory leak ath11k memory leak,vuln_type,CVE-2023-54275,CVE-2023-54275|CVE-2023-54001|CVE-2023-54016|CVE-2023-53745|CVE-2023-52663,1.0,0.2828,0.3806,MODERATE,1,0,"Based on the provided CVE context, I can answer the question about the unknown memory leak in ath11k:
+
+Vulnerability: Unknown memory leak
+Affected component: ath11k (a WiFi driver)
+Severity: UNKNOWN
+Impact: The patch fixes a memory leak caused by not releasing allocated resources when ath11k_peer_fi","In the Linux kernel, the following vulnerability has been resolved:
+
+wifi: ath11k: Fix memory leak in ath11k_peer_rx_frag_setup
+
+crypto_alloc_shash() allocates resources, which should be released by
+crypto_free_shash(). When ath11k_peer_find() fails, there has memory
+leak. Add missing crypto_free_sh",3.37
+RECORD ConsultIDs Rejected reason Reason,technical,CVE-2023-30079,CVE-2023-36119|CVE-2023-46377|CVE-2023-24367|CVE-2023-29845|CVE-2023-47092,0.0,0.2344,0.3979,MODERATE,1,0,"Based on the provided CVE context, I can only provide information for the records where the reason is not ""Rejected reason: DO NOT USE THIS CVE RECORD"" and the reason is not ""Notes: none"".
+
+Unfortunately, none of the records [1], [2], [3], [4], or [5] have a clear reason for rejection or notes that ",Rejected reason: DO NOT USE THIS CVE RECORD. ConsultIDs: CVE-2023-22652. Reason: This record is a duplicate of CVE-2023-22652. Notes: All CVE users should reference CVE-2023-22652 instead of this record. All references and descriptions in this record have been removed to prevent accidental usage.,3.39
+XWiki XWiki XWiki `Macro.VFSTreeMacro` default.This,technical,CVE-2023-29521,CVE-2023-29521|CVE-2023-29509|CVE-2023-29210|CVE-2023-32069|CVE-2023-29209,1.0,0.5752,0.4703,MODERATE,1,0,"The vulnerability is:
+
+* A macro injection vulnerability
+* Affected component: XWiki Platform
+* Severity: HIGH (CVSS score: 8.4)
+* Impact: Any user with view rights can execute arbitrary Groovy, Python or Velocity code in XWiki leading to full access to the XWiki installation.
+
+Note that this vulner","XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any user with view rights can execute arbitrary Groovy, Python or Velocity code in XWiki leading to full access to the XWiki installation. The root cause is improper escaping of `Macro.VFSTreeMac",4.49
+"759ab1edb56c 00000001 some-port0 dp-ifindex"":3,""ifindex"":4294901760,""type"":2} -65536",technical,CVE-2023-53843,CVE-2023-53843|CVE-2023-43240|CVE-2023-25365|CVE-2023-29802|CVE-2023-51473,1.0,0.1761,0.2259,MODERATE,0,0,"The given CVE context does not provide sufficient information to determine the specific vulnerability being referred to in the commit hash ""759ab1edb56c"".
+
+However, based on the provided details about the Linux kernel and OpenVSwitch (OVS), it appears that the issue is related to the handling of pre","In the Linux kernel, the following vulnerability has been resolved:
+
+net: openvswitch: reject negative ifindex
+
+Recent changes in net-next (commit 759ab1edb56c (""net: store netdevs
+in an xarray"")) refactored the handling of pre-assigned ifindexes
+and let syzbot surface a latent problem in ovs. ovs d",5.18
+Incorrect X-Forwarded-For pretix Incorrect parsing,product,CVE-2023-44463,CVE-2023-44463|CVE-2023-33546|CVE-2023-44464|CVE-2023-28626|CVE-2023-40788,1.0,0.0,0.0,LOW,0,1,"Based on the provided CVE context:
+
+1. CVE-2023-44463
+Vulnerability: Incorrect parsing of configuration files causes the application to trust unchecked X-Forwarded-For headers.
+Affected component: pretix
+Severity: MEDIUM (CVSS: 5.3)
+Impact: IP address spoofing by users of the application.
+
+2. Insuff",An issue was discovered in pretix before 2023.7.1. Incorrect parsing of configuration files causes the application to trust unchecked X-Forwarded-For headers even though it has not been configured to do so. This can lead to IP address spoofing by users of the application.,3.8
+Cross-Site Scripting Content-Type POST JavaScript,technical,CVE-2023-6568,CVE-2023-6568|CVE-2023-2817|CVE-2023-53936|CVE-2023-1239|CVE-2023-22857,1.0,0.0,0.0,LOW,0,1,"Here are the answers to your question:
+
+1. What is the vulnerability? 
+A reflected Cross-Site Scripting (XSS) vulnerability.
+
+2. Affected component 
+The mlflow/mlflow repository, specifically within the handling of the Content-Type header in POST requests.
+
+3. Severity 
+MEDIUM CVSS:6.1
+
+4. Impact 
+A","A reflected Cross-Site Scripting (XSS) vulnerability exists in the mlflow/mlflow repository, specifically within the handling of the Content-Type header in POST requests. An attacker can inject malicious JavaScript code into the Content-Type header, which is then improperly reflected back to the use",4.28
+stb_image single file licensed library,technical,CVE-2023-45663,CVE-2023-45662|CVE-2023-45661|CVE-2023-45663|CVE-2023-45667|CVE-2023-45664,1.0,0.1429,0.352,MODERATE,0,0,"Here are the answers:
+
+[1] CVE-2023-45662
+- Vulnerability: Out-of-bounds read due to incorrect image processing.
+- Affected Component: stb_image library's `stbi_set_flip_vertically_on_load` function.
+- Severity: MEDIUM (CVSS 6.5)
+- Impact: A crafted image file can trigger a memcpy out-of-bounds read","stb_image is a single file MIT licensed library for processing images. The stbi__getn function reads a specified number of bytes from context (typically a file) into the specified buffer. In case the file stream points to the end, it returns zero. There are two places where its return value is not c",12.02
+HIGH execution escalation NVIDIA execution escalation,vuln_type,CVE-2023-25515,CVE-2023-0200|CVE-2023-31016|CVE-2023-25509|CVE-2023-0208|CVE-2023-0189,0.0,0.3036,0.2936,MODERATE,1,0,"Based on the provided CVE context:
+
+The HIGH execution escalation vulnerability is related to NVIDIA's DGX-2 device, specifically in the OFBD component. 
+
+This vulnerability allows a user with high privileges and a pre-conditioned heap to cause an access beyond a buffer's end, which may lead to code","NVIDIA GPU Display Driver for Windows and Linux contains a vulnerability where unexpected untrusted data is parsed, which may lead to code execution, denial of service, escalation of privileges, data tampering, or information disclosure.",3.8
+Rejected Rejected reason duplicate,product,CVE-2023-35170,CVE-2023-1271|CVE-2023-3451|CVE-2023-0039|CVE-2023-5755|CVE-2023-4563,0.0,0.1081,0.3777,MODERATE,0,0,"Based on the provided CVE context, I can answer the question as follows:
+
+The rejected reason ""Duplicate"" indicates that there are existing vulnerabilities with the same CVE ID. However, without more information about the specific duplicates, it's difficult to provide a detailed answer.
+
+That being ",Rejected reason: This CVE is a duplicate of another CVE.,4.32
+macOS addressed improved checks fixed,technical,CVE-2023-42929,CVE-2023-41067|CVE-2023-40433|CVE-2023-32352|CVE-2023-40450|CVE-2023-42924,0.0,0.1564,0.3693,MODERATE,0,0,"Here are the answers:
+
+1. CVE-2023-41067:
+- Vulnerability: App bypassing Gatekeeper checks
+- Affected Component: macOS Sonoma 14
+- Severity: MEDIUM
+- Impact: An app may bypass Gatekeeper checks.
+
+2. CVE-2023-40433:
+- Vulnerability: App bypassing Gatekeeper checks
+- Affected Component: macOS Ventura ",The issue was addressed with improved checks. This issue is fixed in macOS Sonoma 14. An app may be able to access protected user data.,9.82
+ELECTRIC XBC-DN32U 01.80 operating improper,technical,CVE-2023-22805,CVE-2023-22805|CVE-2023-22803|CVE-2023-0102|CVE-2023-22807|CVE-2023-0103,1.0,0.3097,0.3553,MODERATE,1,0,"Based on the provided CVE context:
+
+The vulnerability is related to improper access control and authentication issues in the ELECTRIC XBC-DN32U device with operating system version 01.80.
+
+Affected components are:
+
+* LS ELECTRIC XBC-DN32U (device)
+* Operating system of the device (version 01.80)
+
+Se",LS ELECTRIC XBC-DN32U with operating system version 01.80 has improper access control to its read prohibition feature. This could allow a remote attacker to remotely set the feature to lock users out of reading data from the device.,9.15
+MEDIUM injection 6.0.0.0 6.1.2.5 6.2.0.0 6.2.0.1,vuln_type,CVE-2023-50316,CVE-2023-40723|CVE-2023-36663|CVE-2023-25608|CVE-2023-26092|CVE-2023-30434,0.0,0.0816,0.0,LOW,0,0,"I'll answer based on the provided CVE context.
+
+[5] CVE-2023-30434
+Vulnerability: Local privilege escalation or kernel panic.
+Affected Component: IBM Storage Scale (IBM Spectrum Scale) and IBM Elastic Storage Systems.
+Severity: MEDIUM
+Impact: A local user could cause a kernel panic.","IBM Sterling B2B Integrator 6.0.0.0 through 6.1.2.5 and 6.2.0.0 through 6.2.0.1
+is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, add, modify or delete information in the back-end database.",4.44
+HIGH AppScan AppScan ASoC unquoted,vuln_type,CVE-2023-37537,CVE-2023-37537|CVE-2023-53842|CVE-2023-42969|CVE-2023-54338|CVE-2023-21091,1.0,0.7647,0.7179,HIGH,1,0,"The HIGH vulnerability is an unquoted service path vulnerability in HCL AppScan Presence, deployed as a Windows service in HCL AppScan on Cloud (ASoC).
+
+Affected Component: HCL AppScan Presence
+
+Severity: HIGH
+
+Impact: A local attacker may gain elevated privileges.","An unquoted service path vulnerability in HCL AppScan Presence, deployed as a Windows service in HCL AppScan on Cloud (ASoC), may allow a local attacker to gain elevated privileges.",3.71
+v1.0 injection Sourcecodester Packers Movers,technical,CVE-2023-30415,CVE-2023-46435|CVE-2023-30415|CVE-2023-46956|CVE-2023-30092|CVE-2023-46004,1.0,0.2785,0.3655,MODERATE,1,0,"Based on CVE-2023-46435 and CVE-2023-30415, the answer is:
+
+* Vulnerability: SQL Injection
+* Affected Component: Sourcecodester Packers and Movers Management System v1.0
+* Severity: CRITICAL (CVSS: 9.8)
+* Impact: The vulnerability allows an attacker to inject malicious SQL code, potentially leading ",Sourcecodester Packers and Movers Management System v1.0 was discovered to contain a SQL injection vulnerability via the id parameter at /inquiries/view_inquiry.php.,3.65
+MEDIUM SEL-5030 acSELerator QuickSet 20230615,vuln_type,CVE-2023-31168,CVE-2023-31172|CVE-2023-31169|CVE-2023-31168|CVE-2023-31170|CVE-2023-31171,1.0,0.278,0.3693,MODERATE,1,0,"Here are the answers to the question:
+
+1. [CVE-2023-31172]
+   - Vulnerability: Incomplete Filtering of Special Elements
+   - Affected Component: SEL-5030 acSELerator QuickSet Software
+   - Severity: MEDIUM
+   - Impact: Could allow an attacker to embed instructions that could be executed by an author","An Inclusion of Functionality from Untrusted Control Sphere vulnerability in the Schweitzer Engineering Laboratories SEL-5030 acSELerator QuickSet Software could allow an attacker to embed instructions that could be executed by an authorized device operator.
+
+
+
+See Instruction Manual Appendix A and ",12.82
+MEDIUM escalation Intel(R 2.0.1901 escalation Incorrect,vuln_type,CVE-2023-40154,CVE-2023-40154|CVE-2023-49603|CVE-2023-39932|CVE-2023-36490|CVE-2023-41231,1.0,0.4,0.0,LOW,1,0,"Based on the provided CVEs, I can answer the question as follows:
+
+The MEDIUM escalation vulnerability in Intel(R) 2.0.1901 is due to Incorrect default permissions (CVE-2023-40154), which may allow a privileged user to potentially enable escalation of privilege via local access.
+
+Impact: The severit",Incorrect default permissions in the Intel(R) SUR for Gameplay Software before version 2.0.1901 may allow privillaged user to potentially enable escalation of privilege via local access.,3.63
+Potential Revenera InstallShield Potential privilege,product,CVE-2023-29080,CVE-2023-29080|CVE-2023-26300|CVE-2023-21800|CVE-2023-6138|CVE-2023-21542,1.0,0.5255,0.8115,HIGH,1,0,"Based on CVE-2023-29080:
+
+Potential Revenera InstallShield Potential Privilege Escalation Vulnerability:
+
+* What the vulnerability is: A potential privilege escalation vulnerability due to adding an InstallScript custom action to a Basic MSI or InstallScript MSI project.
+* Affected component: Revene",Potential privilege escalation vulnerability in Revenera InstallShield versions 2022 R2 and 2021 R2 due to adding InstallScript custom action to a Basic MSI or InstallScript MSI project extracting few binaries to a predefined writable folder during installation time. The standard user account has wr,4.61
+StagTools WordPress 2.3.7 Cross-Site Scripting,technical,CVE-2023-0891,CVE-2023-0891|CVE-2023-41868|CVE-2023-1761|CVE-2023-22721|CVE-2023-4913,1.0,0.4,0.4273,MODERATE,1,0,"The StagTools WordPress plugin version 2.3.7 has a Medium-severity Cross-site Scripting (XSS) vulnerability (CVE-2023-0891).
+
+The affected component is the plugin's shortcode attributes outputting.
+
+The severity of this vulnerability is Medium, with a CVSS score of 5.4.
+
+The impact of this vulnerabi","The StagTools WordPress plugin before 2.3.7 does not validate and escape some of its shortcode attributes before outputting them back in a page/post where the shortcode is embed, which could allow users with the contributor role and above to perform Stored Cross-Site Scripting attacks.",4.51
+Memory Corruption Data Network Stack,technical,CVE-2023-21635,CVE-2023-21635|CVE-2023-28541|CVE-2023-31024|CVE-2023-37296|CVE-2023-33072,1.0,0.3824,0.3884,MODERATE,1,0,"Based on CVE-2023-21635:
+
+Memory Corruption in Data Network Stack & Connectivity
+
+Affected Component: Sim gets detected on telephony
+
+Severity: MEDIUM
+CVSS: 6.7
+
+Impact: The vulnerability allows an attacker to cause memory corruption when sim gets detected on telephony, which may lead to arbitrary c",Memory Corruption in Data Network Stack & Connectivity when sim gets detected on telephony.,3.59
+MEDIUM escalation execution escalation execution ALPS07937113,vuln_type,CVE-2023-20821,CVE-2023-20623|CVE-2023-2530|CVE-2023-32855|CVE-2023-20821|CVE-2023-45849,1.0,0.5301,0.3536,MODERATE,1,0,"Based on CVE-2023-20821:
+
+The vulnerability is a possible out of bounds write due to a missing bounds check.
+The affected component is nvram.
+The severity is MEDIUM.
+The impact is local escalation of privilege with System execution privileges needed.","In nvram, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation. Patch ID: ALPS07937113; Issue ID: ALPS07937113.",3.06
+CRITICAL injection injection StudentPopupDetails_Timetable IDAttend’s IDWeb,vuln_type,CVE-2023-26569,CVE-2023-26569|CVE-2023-26570|CVE-2023-26581|CVE-2023-41523|CVE-2023-27260,1.0,0.5507,0.5086,MODERATE,1,0,"The vulnerability is a Critical SQL injection in the StudentPopupDetails_Timetable method in IDAttend's IDWeb application 3.1.052.
+
+Affected component: IDWeb application 3.1.052
+
+Severity: CRITICAL (CVSS: 9.8)
+
+Impact: Unauthenticated attackers can extract or modify all data.",Unauthenticated SQL injection in the StudentPopupDetails_Timetable method in IDAttend’s IDWeb application 3.1.052 and earlier allows extraction or modification of all data by unauthenticated attackers.,3.19
+MEDIUM ICMP ICMPv6 uC-TCP-IP v3.06.01,vuln_type,CVE-2023-39540,CVE-2023-39541|CVE-2023-39540|CVE-2023-38562|CVE-2023-53343|CVE-2023-41562,1.0,0.2655,0.3949,MODERATE,1,0,"Based on the provided CVE context, here are the answers to the questions:
+
+[1] 
+- What is the vulnerability?: A denial of service vulnerability exists in the ICMP and ICMPv6 parsing functionality of Weston Embedded uC-TCP-IP v3.06.01.
+- Affected component: Weston Embedded uC-TCP-IP v3.06.01
+- Severi",A denial of service vulnerability exists in the ICMP and ICMPv6 parsing functionality of Weston Embedded uC-TCP-IP v3.06.01. A specially crafted network packet can lead to an out-of-bounds read. An attacker can send a malicious packet to trigger this vulnerability.This vulnerability concerns a denia,22.16
+MEDIUM NVIDIA Display Driver Windows,vuln_type,CVE-2023-0186,CVE-2023-0186|CVE-2023-31027|CVE-2023-0192|CVE-2023-0194|CVE-2023-31023,1.0,0.4638,0.2828,MODERATE,1,0,"Based on CVE-2023-0186:
+
+MEDIUM NVIDIA Display Driver for Windows
+Vulnerability: Out-of-bounds write in kernel mode layer
+Affected Component: NVIDIA GPU Display Driver for Windows
+Severity: MEDIUM (CVSS: 6.1)
+Impact: Denial of service and data tampering","NVIDIA GPU Display Driver for Windows contains a vulnerability in the kernel mode layer, where an out-of-bounds write can lead to denial of service and data tampering.",3.06
+Unite(R 4.2.35041 escalation Improper access,technical,CVE-2023-40161,CVE-2023-40161|CVE-2023-25773|CVE-2023-25182|CVE-2023-24047|CVE-2023-32609,1.0,0.55,0.3262,MODERATE,1,0,"Based on CVE-2023-40161:
+
+Vulnerability: Improper access control
+Affected component: Intel Unite(R) Client software before version 4.2.35041
+Severity: MEDIUM
+Impact: Potential escalation of privilege via local access.
+
+Note that the vulnerability is related to improper access control, allowing an au",Improper access control in some Intel Unite(R) Client software before version 4.2.35041 may allow an authenticated user to potentially enable escalation of privilege via local access.,3.61
+CusRev WooCommerce Levels.This WooCommerce 5.36.0,technical,CVE-2023-45101,CVE-2023-45101|CVE-2023-51692|CVE-2023-50850|CVE-2023-5348|CVE-2023-30783,1.0,0.5155,0.3336,MODERATE,1,0,"Based on CVE-2023-45101, here is the answer:
+
+CusRev Customer Reviews for WooCommerce has a Missing Authorization vulnerability (CWE-862) that allows Exploiting Incorrectly Configured Access Control Security Levels.
+
+Affected Component: CusRev Customer Reviews for WooCommerce
+Severity: MEDIUM
+Impact",Missing Authorization vulnerability in CusRev Customer Reviews for WooCommerce allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Customer Reviews for WooCommerce: from n/a through 5.36.0.,4.09
+Overflow D-Link DI-7003GV2.D1 v.23.08.25D1 DI-7100G+V2.D1,technical,CVE-2023-45576,CVE-2023-45574|CVE-2023-45572|CVE-2023-45577|CVE-2023-45575|CVE-2023-45573,0.0,0.4177,0.3593,MODERATE,1,0,"Based on CVE-2023-45574 and CVE-2023-45572:
+
+The vulnerability is a Buffer Overflow.
+
+Affected components are D-Link device DI-7003GV2.D1 v.23.08.25D1 and DI-7100G+V2.D1 v.23.08.23D1.
+
+Severity: CRITICAL (CVSS: 9.8)
+
+Impact: A remote attacker can execute arbitrary code via the fn parameter of the fi","Buffer Overflow vulnerability in D-Link device DI-7003GV2.D1 v.23.08.25D1 and before, DI-7100G+V2.D1 v.23.08.23D1 and before, DI-7100GV2.D1 v.23.08.23D1, DI-7200G+V2.D1 v.23.08.23D1 and before, DI-7200GV2.E1 v.23.08.23E1 and before, DI-7300G+V2.D1 v.23.08.23D1, and DI-7400G+V2.D1 v.23.08.23D1 and be",6.88
+insufficient file permissions,product,CVE-2023-21409,CVE-2023-40302|CVE-2023-21409|CVE-2023-42860|CVE-2023-21408|CVE-2023-21421,1.0,0.16,0.6996,HIGH,0,0,"Here are the answers:
+
+[1] 
+- What the vulnerability is: Weak File Permissions Vulnerability
+- Affected component: NETSCOUT nGeniusPULSE 3.8
+- Severity: CRITICAL
+- Impact: Unprivileged users could potentially exploit this vulnerability.
+
+[2] 
+- What the vulnerability is: Insufficient file permission","Due to insufficient file permissions, unprivileged users could gain access to unencrypted administrator
+credentials allowing the configuration of the application.",8.8
+security vulnerability been implementation rocket.chat,technical,CVE-2023-28316,CVE-2023-28316|CVE-2023-28325|CVE-2023-28358|CVE-2023-28359|CVE-2023-28317,1.0,0.1692,0.4292,MODERATE,0,0,"Here are the answers:
+
+1. CVE-2023-28316:
+Vulnerability: Other active sessions not invalidated upon activating 2FA.
+Affected Component: Rocket.Chat 2FA implementation.
+Severity: CRITICAL
+Impact: Potential attacker can maintain access to a compromised account even after 2FA is enabled.
+
+2. CVE-2023-2","A security vulnerability has been discovered in the implementation of 2FA on the rocket.chat platform, where other active sessions are not invalidated upon activating 2FA. This could potentially allow an attacker to maintain access to a compromised account even after 2FA is enabled.",11.36
+Memory memory corruption safety bugs,technical,CVE-2023-4058,CVE-2023-5731|CVE-2023-33072|CVE-2023-34417|CVE-2023-4584|CVE-2023-6213,0.0,0.221,0.0,LOW,1,0,"Here are the answers based on the provided CVE context:
+
+1. Vulnerability: Memory safety bugs
+Affected Component: Firefox
+Severity: CRITICAL
+Impact: Could have been exploited to run arbitrary code with enough effort.
+
+2. Vulnerability: Memory corruption in Core while processing control functions
+Aff",Memory safety bugs present in Firefox 115. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 116.,8.33
+v4.1 NULL Pointer Dereference NULL,technical,CVE-2023-33461,CVE-2023-33461|CVE-2023-39669|CVE-2023-53399|CVE-2023-6915|CVE-2023-53603,1.0,0.303,0.3666,MODERATE,1,0,"Based on the provided CVE context:
+
+[1] CVE-2023-33461
+Vulnerability: NULL Pointer Dereference in function iniparser_getlongint.
+Affected Component: iniparser v4.1.
+Severity: MEDIUM (CVSS: 5.5)
+Impact: CWE-476, which is a classic example of a buffer overflow vulnerability.
+
+In summary, CVE-2023-3346",iniparser v4.1 is vulnerable to NULL Pointer Dereference in function iniparser_getlongint which misses check NULL for function iniparser_getstring's return.,5.37
+Improper Neutralization Input Improper Neutralization,product,CVE-2023-6047,CVE-2023-37221|CVE-2023-4157|CVE-2023-0566|CVE-2023-6709|CVE-2023-1754,0.0,0.0829,0.0,LOW,0,0,"Here are the answers:
+
+[1] 
+- Vulnerability: Cross-site Scripting
+- Affected Component: Twenty BOT
+- Severity: HIGH
+- Impact: The vulnerability allows an attacker to inject malicious scripts, potentially leading to unauthorized actions on the website.
+
+[2] 
+- Vulnerability: Injection
+- Affected Comp",Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Algoritim E-commerce Software allows Reflected XSS.This issue affects E-commerce Software: before 3.9.2.,10.97
+Alteryx Server JavaScript Alteryx Server,product,CVE-2023-26961,CVE-2023-26961|CVE-2023-45280|CVE-2023-40045|CVE-2023-30188|CVE-2023-50808,1.0,0.5299,0.229,MODERATE,1,0,"The vulnerability in Alteryx Server is related to the lack of file type verification for uploaded files. Specifically, it allows attackers to upload arbitrary files, including JavaScript content, via the type field in a JSON document within a PUT /gallery/api/media request.
+
+- Vulnerability: Stored ","Alteryx Server 2022.1.1.42590 does not employ file type verification for uploaded files. This vulnerability allows attackers to upload arbitrary files (e.g., JavaScript content for stored XSS) via the type field in a JSON document within a PUT /gallery/api/media request.",4.88
+Rejected Developer Please Rejected reason,product,CVE-2023-3353,CVE-2023-0253|CVE-2023-3353|CVE-2023-5584|CVE-2023-1271|CVE-2023-22502,1.0,0.2065,0.6945,HIGH,1,0,"Based on the provided CVE context, I can answer the question as follows:
+
+The rejected CVEs are:
+
+1. [CVE-2023-0253]
+   - Reason for rejection: Accidental CVE Assignment
+   - No information available about the vulnerability.
+
+2. [CVE-2023-3353]
+   - Reason for rejection: Developer patched two issues","Rejected reason: ** REJECT ** Developer patched two issues with a single patch, so only one CVE is necessary. Please use CVE-2023-3352.",8.58
+Scripting gVectors wpDiscuz XSS.This wpDiscuz,technical,CVE-2023-51691,CVE-2023-47185|CVE-2023-51691|CVE-2023-46310|CVE-2023-47775|CVE-2023-33213,1.0,0.2963,0.4522,MODERATE,1,0,"The vulnerability is a Stored Cross-Site Scripting (XSS) vulnerability in the gVectors Team Comments — wpDiscuz plugin. 
+
+Affected component: The wpDiscuz plugin.
+
+Severity: MEDIUM
+
+Impact: This issue allows an attacker to inject malicious scripts into the comments section of the website, potentiall",Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in gVectors Team Comments – wpDiscuz allows Stored XSS.This issue affects Comments – wpDiscuz: from n/a through 7.6.12.,3.5
+MEDIUM forgery forgery CSRF cross-site request,vuln_type,CVE-2023-32980,CVE-2023-48283|CVE-2023-47875|CVE-2023-38579|CVE-2023-37998|CVE-2023-3075,0.0,0.2022,0.8206,HIGH,1,0,"Based on the provided CVE context:
+
+The vulnerability is a Cross-Site Request Forgery (CSRF) issue that allows an attacker to craft a malicious request.
+
+Affected components are:
+
+* PressTigers Simple Testimonials Showcase
+* Perfmatters
+* Disabler
+* GitHub repository tsolucio/corebos
+
+Severity of th",A cross-site request forgery (CSRF) vulnerability in Jenkins Email Extension Plugin allows attackers to make another user stop watching an attacker-specified job.,5.28
+6.0.0 6.0.6 5.3.0 5.3.25 mvcRequestMatcher,technical,CVE-2023-20860,CVE-2023-20860|CVE-2023-20861|CVE-2023-38945|CVE-2023-40723|CVE-2023-38330,1.0,0.3774,0.6585,HIGH,1,0,"The vulnerability is a mismatch in pattern matching between Spring Security and Spring MVC, allowing for a security bypass.
+
+Affected component: Spring Framework versions 6.0.0 - 6.0.6 or 5.3.0 - 5.3.25.
+
+Severity: HIGH (CVSS:7.5).
+
+Impact: The vulnerability allows an attacker to bypass security con","Spring Framework running version 6.0.0 - 6.0.6 or 5.3.0 - 5.3.25 using ""**"" as a pattern in Spring Security configuration with the mvcRequestMatcher creates a mismatch in pattern matching between Spring Security and Spring MVC, and the potential for a security bypass.",5.15
+2023 Order Invoice pages Floorsight,technical,CVE-2023-45892,CVE-2023-45892|CVE-2023-4245|CVE-2023-45893|CVE-2023-4161|CVE-2023-51486,1.0,0.5063,0.2795,MODERATE,1,0,"Based on CVE-2023-45892:
+
+The vulnerability is an issue that allows an unauthenticated remote attacker to view sensitive customer information.
+
+Affected component: The Order and Invoice pages in Floorsight Insights Q3 2023.
+
+Severity: HIGH (CVSS:7.5)
+
+Impact: An unauthenticated remote attacker can v",An issue discovered in the Order and Invoice pages in Floorsight Insights Q3 2023 allows an unauthenticated remote attacker to view sensitive customer information.,4.05
+SourceCodester scripting VDB-240941 vulnerability classified,technical,CVE-2023-5302,CVE-2023-5302|CVE-2023-3318|CVE-2023-1852|CVE-2023-1946|CVE-2023-1689,1.0,0.2077,0.0,LOW,1,0,"Based on the provided CVE context:
+
+1. SourceCodester Best Courier Management System 1.0 - VDB-240941
+   - Vulnerability: Cross site scripting (CWE-79)
+   - Affected component: Manage Account Page
+   - Severity: LOW CVSS:3.5
+   - Impact: The attack may be initiated remotely.
+
+2. SourceCodester Resor","A vulnerability, which was classified as problematic, has been found in SourceCodester Best Courier Management System 1.0. This issue affects some unknown processing of the component Manage Account Page. The manipulation of the argument First Name leads to cross site scripting. The attack may be ini",14.13
+OpenPrinting CUPS 2.4.2 overflow overflow,technical,CVE-2023-32324,CVE-2023-32324|CVE-2023-4504|CVE-2023-34241|CVE-2023-27285|CVE-2023-50739,1.0,0.4133,0.4499,MODERATE,1,0,"The OpenPrinting CUPS 2.4.2 has a heap buffer overflow vulnerability (CVE-2023-32324) that allows a remote attacker to launch a denial of service (DoS) attack. The affected component is the `format_log_line` function in versions prior to 2.4.7.
+
+The severity of this vulnerability is HIGH with a CVSS","OpenPrinting CUPS is an open source printing system. In versions 2.4.2 and prior, a heap buffer overflow vulnerability would allow a remote attacker to launch a denial of service (DoS) attack. A buffer overflow vulnerability in the function `format_log_line` could allow remote attackers to cause a D",5.33
+MEDIUM overflow 2.2.13 overflow indent heap-based,vuln_type,CVE-2023-40305,CVE-2023-40305|CVE-2023-4682|CVE-2023-1170|CVE-2023-3291|CVE-2023-31722,1.0,0.2254,0.4182,MODERATE,1,0,"The vulnerability is a heap-based buffer overflow in the GNU indent 2.2.13 software.
+
+Affected component: GNU indent 2.2.13.
+
+Severity: MEDIUM.
+
+Impact: The vulnerability has a CVSS score of 5.5 and is classified as CWE-787, indicating that it can lead to arbitrary code execution.",GNU indent 2.2.13 has a heap-based buffer overflow in search_brace in indent.c via a crafted file.,3.38
+Squidex Squidex contain squid.svg,product,CVE-2023-24278,CVE-2023-24278|CVE-2023-46857|CVE-2023-0643|CVE-2023-3580|CVE-2023-46744,1.0,0.1795,0.4639,MODERATE,0,0,"The vulnerability in Squidex is a Cross-Site Scripting (XSS) vulnerability, specifically stored XSS. 
+
+Affected component: The Upload Assets feature.
+
+Severity: MEDIUM (CVSS: 6.1)
+
+Impact: Authenticated adversaries with the ""assets.create"" permission can leverage this vulnerability to upload a malic",Squidex before 7.4.0 was discovered to contain a squid.svg cross-site scripting (XSS) vulnerability.,5.0
+19.2.23975 execution Server Parallels does,technical,CVE-2023-45894,CVE-2023-45894|CVE-2023-27322|CVE-2023-50227|CVE-2023-6528|CVE-2023-27324,1.0,0.5591,0.448,MODERATE,1,0,"Based on CVE-2023-45894:
+
+19.2.23975 execution Server Parallels does not segment virtualized applications from the server, which allows a remote attacker to achieve remote code execution via standard kiosk breakout techniques.
+
+* Vulnerability: Remote Code Execution
+* Affected Component: Parallels R","The Remote Application Server in Parallels RAS before 19.2.23975 does not segment virtualized applications from the server, which allows a remote attacker to achieve remote code execution via standard kiosk breakout techniques.",5.18
+Unauth Reflected Cross-Site Unauth Reflected,product,CVE-2023-44144,CVE-2023-41692|CVE-2023-47549|CVE-2023-41861|CVE-2023-42479|CVE-2023-47510,0.0,0.0,0.0,LOW,0,1,"Here are the answers to your questions based on the provided CVE context:
+
+1. What is the vulnerability? 
+Unauth Reflected Cross-Site Scripting (XSS)
+
+2. Affected component 
+Hennessey Digital Attorney theme <= 3, spider-themes EazyDocs plugin <= 2.3.3 versions, Restrict plugin <= 2.2.4 versions
+
+3. ",Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Dreamfox Payment gateway per Product for WooCommerce plugin <= 3.2.7 versions.,7.23
+hns3 hns3 Linux kernel following,technical,CVE-2023-52807,CVE-2023-52807|CVE-2023-54000|CVE-2023-34620|CVE-2023-53230|CVE-2023-52863,1.0,0.2184,0.7109,HIGH,1,0,"Based on the provided CVE context, I can answer the question as follows:
+
+1. What is the vulnerability in the hns3 driver?
+   - The vulnerability is an out-of-bounds access that may occur when coalesce info is read via debugfs.
+   - Affected component: Linux kernel's hns3 driver
+   - Severity: HIGH ","In the Linux kernel, the following vulnerability has been resolved:
+
+net: hns3: fix out-of-bounds access may occur when coalesce info is read via debugfs
+
+The hns3 driver define an array of string to show the coalesce
+info, but if the kernel adds a new mode or a new state,
+out-of-bounds access may o",15.69
+PHPJabbers v4.0 HTML Injection Hotel,technical,CVE-2023-51299,CVE-2023-51299|CVE-2023-51300|CVE-2023-51302|CVE-2023-51317|CVE-2023-51295,1.0,0.5625,0.4978,MODERATE,1,0,"The PHPJabbers v4.0 Hotel Booking System is vulnerable to HTML Injection in the ""name, plugin_sms_api_key, plugin_sms_country_code, title, plugin_sms_api_key, title"" parameters.
+
+- Vulnerability Type: HTML Injection
+- Affected Component: Hotel Booking System (version 4.0)
+- Severity: MEDIUM
+- Impact","PHPJabbers Hotel Booking System v4.0 is vulnerable to HTML Injection in the ""name, plugin_sms_api_key, plugin_sms_country_code, title, plugin_sms_api_key, title"" parameters.",4.77
+Injection CRUD v1.0 vulnerability add.php,technical,CVE-2023-48078,CVE-2023-48078|CVE-2023-41503|CVE-2023-41505|CVE-2023-7096|CVE-2023-38916,1.0,0.6364,0.5562,MODERATE,1,0,"Based on CVE-2023-48078, the answer is:
+
+Vulnerability: SQL Injection
+Affected Component: add.php in Simple CRUD Functionality v1.0
+Severity: CRITICAL
+Impact: Allows attackers to run arbitrary SQL commands via the 'title' parameter, potentially leading to unauthorized data access or modification.",SQL Injection vulnerability in add.php in Simple CRUD Functionality v1.0 allows attackers to run arbitrary SQL commands via the 'title' parameter.,3.47
+injection There command problem mobile,technical,CVE-2023-26310,CVE-2023-26310|CVE-2023-25649|CVE-2023-1723|CVE-2023-25643|CVE-2023-28012,1.0,0.1635,0.3426,MODERATE,0,0,"Based on the provided CVE context, there are multiple vulnerabilities related to command injection in mobile products. Here are the answers:
+
+1. What is the vulnerability and which component is affected?
+   - Vulnerability: Command injection problem
+   - Affected Component: Old version of the mobile",There is a command injection problem in the old version of the mobile phone backup app.,9.05
+vulnerability feature Cisco authenticated inject,technical,CVE-2023-20273,CVE-2023-20273|CVE-2023-20163|CVE-2023-20254|CVE-2023-20164|CVE-2023-20029,1.0,0.2162,0.0,LOW,1,0,"Here are the answers based on the provided CVE context:
+
+1. Vulnerability: Insufficient input validation in the web UI feature of Cisco IOS XE Software.
+Affected Component: Cisco IOS XE Software (web UI feature).
+Severity: HIGH
+Impact: An attacker could inject commands with the privileges of root, a","A vulnerability in the web UI feature of Cisco IOS XE Software could allow an authenticated, remote attacker to inject commands with the privileges of root. This vulnerability is due to insufficient input validation. An attacker could exploit this vulnerability by sending crafted input to the web UI",13.58
+HIGH Escalation Escalation ZDI-CAN-21845 Intel Driver,vuln_type,CVE-2023-50197,CVE-2023-50197|CVE-2023-32278|CVE-2023-3725|CVE-2023-42668|CVE-2023-42099,1.0,0.365,0.7179,HIGH,1,0,"Based on the provided CVE context:
+
+The vulnerability is a Local Privilege Escalation vulnerability.
+The affected component is Intel Driver & Support Assistant.
+The severity is HIGH.
+The impact is that an attacker can escalate privileges and execute arbitrary code in the context of SYSTEM.",Intel Driver & Support Assistant Link Following Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Intel Driver & Support Assistant. An attacker must first obtain the ability to execute low-privileged code on the ta,3.68
+HIGH escalation Intel(R PROSet/Wireless WiFi 22.220,vuln_type,CVE-2023-28714,CVE-2023-28714|CVE-2023-33875|CVE-2023-32644|CVE-2023-35061|CVE-2023-25951,1.0,0.6535,0.3564,MODERATE,1,0,"Based on CVE-2023-28714, the answer is:
+
+Vulnerability: Improper access control in firmware
+Affected component: Intel(R) PROSet/Wireless WiFi software for Windows before version 22.220 HF (Hot Fix)
+Severity: HIGH
+Impact: Potential escalation of privilege via local access.
+
+Note that this vulnerabili",Improper access control in firmware for some Intel(R) PROSet/Wireless WiFi software for Windows before version 22.220 HF (Hot Fix) may allow a privileged user to potentially enable escalation of privilege via local access.,4.48
+Adobe InDesign Exploitation Adobe versions,product,CVE-2023-29309,CVE-2023-29308|CVE-2023-44342|CVE-2023-29319|CVE-2023-29310|CVE-2023-21593,0.0,0.2526,0.3611,MODERATE,1,0,"Here are the answers to the question:
+
+1. CVE-2023-29308
+   - Vulnerability: Out-of-bounds write vulnerability that could result in arbitrary code execution.
+   - Affected Component: Adobe InDesign versions ID18.3 (and earlier) and ID17.4.1 (and earlier).
+   - Severity: HIGH
+   - Impact: Arbitrary c",Adobe InDesign versions ID18.3 (and earlier) and ID17.4.1 (and earlier) are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to bypass mitigations such as ASLR. Exploitation of this issue requires user in,15.77
+v.7.4.8 File Upload vulnerability execute,technical,CVE-2023-46474,CVE-2023-36212|CVE-2023-49052|CVE-2023-36319|CVE-2023-46474|CVE-2023-37692,1.0,0.427,0.4492,MODERATE,1,0,"For CVE-2023-46474:
+
+The vulnerability is a File Upload vulnerability (CWE-434) that allows a remote attacker to execute arbitrary code and escalate privileges.
+
+Affected Component: PMB v.7.4.8
+
+Severity: HIGH
+
+Impact: The vulnerability enables a remote attacker to execute arbitrary code and potenti",File Upload vulnerability PMB v.7.4.8 allows a remote attacker to execute arbitrary code and escalate privileges via a crafted PHP file uploaded to the start_import.php file.,3.74
+HIGH Scripting Cross-Site Scripting 1.0.15 Unauth,vuln_type,CVE-2023-28792,CVE-2023-46090|CVE-2023-25841|CVE-2023-40205|CVE-2023-6882|CVE-2023-28792,1.0,0.0,0.0,LOW,0,1,"Here are the answers to your questions based on the provided CVE context:
+
+[1] 
+- What the vulnerability is: Unauth. Reflected Cross-Site Scripting (XSS) vulnerability
+- Affected component: WebDorado WDSocialWidgets plugin
+- Severity: HIGH
+- Impact: The severity of this vulnerability is 7.1, indicat",Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in I Thirteen Web Solution Continuous Image Carousel With Lightbox plugin <= 1.0.15 versions.,11.39
+HIGH injection injection v.1.0 vulnerability Rail,vuln_type,CVE-2023-31936,CVE-2023-31933|CVE-2023-31936|CVE-2023-31932|CVE-2023-31937|CVE-2023-3275,1.0,0.2154,0.3719,MODERATE,1,0,"Based on the provided CVE context, here are the answers:
+
+[1] 
+- What the vulnerability is: Sql injection vulnerability
+- Affected component: edit-pass-detail.php file
+- Severity: HIGH
+- Impact: Allows a remote attacker to execute arbitrary code via the editid parameter.
+
+[2]
+- What the vulnerabilit",Sql injection vulnerability found in Rail Pass Management System v.1.0 allows a remote attacker to execute arbitrary code via the viewid parameter of the view-pass-detail.php file.,9.97
+Motorola Base Radio Motorola Base,product,CVE-2023-23773,CVE-2023-23771|CVE-2023-23773|CVE-2023-23770|CVE-2023-23772|CVE-2023-38301,1.0,0.2692,0.3783,MODERATE,1,0,"Based on the provided CVE context:
+
+[1] CVE-2023-23771
+- Vulnerability: Accepts hard-coded backdoor password.
+- Affected Component: Motorola MBTS Base Radio Man Machine Interface (MMI).
+- Severity: HIGH CVSS:8.4
+- Impact: Allows service technicians to diagnose and configure the device without needin","Motorola EBTS/MBTS Base Radio fails to check firmware authenticity. The Motorola MBTS Base Radio lacks cryptographic signature validation for firmware update packages, allowing an authenticated attacker to gain arbitrary code execution, extract secret key material, and/or leave a persistent implant ",16.1
+grub2's NTFS NTFS corruption UEFI,technical,CVE-2023-4692,CVE-2023-4692|CVE-2023-4693|CVE-2023-26607|CVE-2023-53294|CVE-2023-28538,1.0,0.1976,0.4331,MODERATE,0,0,"Based on the provided CVE context:
+
+[1] CVE-2023-4692:
+The vulnerability is an out-of-bounds write flaw in grub2's NTFS filesystem driver. The affected component is grub2.
+Severity: HIGH
+Impact: Arbitrary code execution and secure boot protection bypass may be achieved.
+
+[2] CVE-2023-4693:
+The vulne","An out-of-bounds write flaw was found in grub2's NTFS filesystem driver. This issue may allow an attacker to present a specially crafted NTFS filesystem image, leading to grub's heap metadata corruption. In some circumstances, the attack may also corrupt the UEFI firmware heap metadata. As a result,",13.08
+Tenda Denial Service Tenda contain,product,CVE-2023-48109,CVE-2023-48110|CVE-2023-48109|CVE-2023-23080|CVE-2023-27062|CVE-2023-49427,1.0,0.1938,0.3478,MODERATE,0,0,"Based on the provided CVE context:
+
+1. Tenda AX1803 v1.0.0.1:
+   - Vulnerability: Heap overflow via the urls parameter in the function saveParentControlInfo.
+   - Affected Component: saveParentControlInfo function.
+   - Severity: HIGH (CVSS: 7.5).
+   - Impact: Denial of Service (DoS) attack.
+
+2. Ten",Tenda AX1803 v1.0.0.1 was discovered to contain a heap overflow via the deviceId parameter in the function saveParentControlInfo . This vulnerability allows attackers to cause a Denial of Service (DoS) attack,15.71
+MEDIUM Scripting Cross-Site Scripting 3.1.6 Auth,vuln_type,CVE-2023-44266,CVE-2023-40605|CVE-2023-6813|CVE-2023-44266|CVE-2023-38000|CVE-2023-25021,1.0,0.2947,0.0,LOW,1,0,"Based on the provided CVE context:
+
+The vulnerability is a Stored Cross-Site Scripting (XSS) vulnerability.
+
+The affected component is the Jewel Theme WP Adminify plugin, specifically versions <= 3.1.6.
+
+The severity of this vulnerability is MEDIUM.
+
+The impact of this vulnerability is not explicitl",Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Jewel Theme WP Adminify plugin <= 3.1.6 versions.,4.89
+MEDIUM disclosure execution disclosure execution Messaging,vuln_type,CVE-2023-40649,CVE-2023-40649|CVE-2023-36913|CVE-2023-40643|CVE-2023-35383|CVE-2023-30921,1.0,0.1852,0.0,LOW,0,0,"Based on the provided CVEs, here are the answers:
+
+[1] 
+- Vulnerability: Missing permission check in messaging
+- Affected component: Messaging (likely a software or service)
+- Severity: MEDIUM
+- Impact: Local information disclosure with no additional execution privileges needed.
+
+[2] 
+- Vulnerabilit","In Messaging, there is a possible missing permission check. This could lead to local information disclosure with no additional execution privileges needed",9.31
+WordPress WordPress File Manager plugin,technical,CVE-2023-5907,CVE-2023-5105|CVE-2023-3814|CVE-2023-4862|CVE-2023-5907|CVE-2023-6421,1.0,0.1971,0.3297,MODERATE,0,0,"Based on the provided CVE context, here are the answers:
+
+1. [CVE-2023-5105]
+Vulnerability: Allows an Editor+ user to bypass file download logic and download sensitive files like `wp-config.php`.
+Affected Component: Frontend File Manager Plugin.
+Severity: MEDIUM (CVSS: 6.5)
+Impact: Medium impact, as","The File Manager WordPress plugin before 6.3 does not restrict the file managers root directory, allowing an administrator to set a root outside of the WordPress root directory, giving access to system files and directories even in a multisite setup, where site administrators should not be allowed t",12.62
+v1.3 injection DeleteFunctions.php Schoolmate contain,technical,CVE-2023-39850,CVE-2023-39850|CVE-2023-40944|CVE-2023-41503|CVE-2023-40946|CVE-2023-6766,1.0,0.3514,0.4582,MODERATE,1,0,"The vulnerability in v1.3 of Schoolmate's DeleteFunctions.php is a SQL Injection vulnerability via the $courseid and $teacherid parameters.
+
+- Vulnerability Type: SQL Injection
+- Affected Component: DeleteFunctions.php
+- Severity: CRITICAL (CVSS: 9.8)
+- Impact: The vulnerability allows for remote co",Schoolmate v1.3 was discovered to contain multiple SQL injection vulnerabilities via the $courseid and $teacherid parameters at DeleteFunctions.php.,4.22
+CRITICAL injection RUGGEDCOM CROSSBOW V5.4 injection,vuln_type,CVE-2023-37372,CVE-2023-37372|CVE-2023-27411|CVE-2023-27463|CVE-2023-37373|CVE-2023-27309,1.0,0.3519,0.3486,MODERATE,1,0,"Based on CVE-2023-37372 and CVE-2023-27411, the answer is:
+
+* Vulnerability: SQL Injection
+* Affected Component: RUGGEDCOM CROSSBOW (All versions < V5.4)
+* Severity: CRITICAL (CVE-2023-37372) and HIGH (CVE-2023-27411)
+* Impact: An unauthenticated remote attacker can execute arbitrary SQL queries on ",A vulnerability has been identified in RUGGEDCOM CROSSBOW (All versions < V5.4). The affected applications is vulnerable to SQL injection. This could allow an unauthenticated remote attackers to execute arbitrary SQL queries on the server database.,5.9
+HTTP vulnerability unauthenticated read arbitrary,technical,CVE-2023-48259,CVE-2023-48261|CVE-2023-48260|CVE-2023-48259|CVE-2023-48247|CVE-2023-0040,1.0,0.2656,0.3193,MODERATE,1,0,"Based on the provided CVE context:
+
+* Vulnerability: Unauthenticated read arbitrary content of the results database via a crafted HTTP request.
+* Affected Component: The specific component or application that is vulnerable to this type of attack is not specified in the provided CVEs. However, it can",The vulnerability allows a remote unauthenticated attacker to read arbitrary content of the results database via a crafted HTTP request.,6.02
+disclosure execution Bluetooth there possible,technical,CVE-2023-21359,CVE-2023-21395|CVE-2023-21307|CVE-2023-21359|CVE-2023-21315|CVE-2023-21347,1.0,0.1754,0.4502,MODERATE,0,0,"Here are the answers:
+
+1. Disclosure of remote information over Bluetooth without additional execution privileges, affecting the Bluetooth protocol, severity MEDIUM, and impact: Remote Information Disclosure.
+
+2. Local information disclosure due to a permissions bypass for accessing an Android devic","In Bluetooth, there is a possible out of bounds read due to a missing bounds check. This could lead to local information disclosure in the Bluetooth server with System execution privileges needed. User interaction is not needed for exploitation.",7.2
+Lead Management WordPress Lead Management,product,CVE-2023-2405,CVE-2023-40417|CVE-2023-45833|CVE-2023-0192|CVE-2023-3636|CVE-2023-42438,0.0,0.1625,0.0,LOW,0,0,"Based on the provided CVE context:
+
+[2] CVE-2023-45833
+Vulnerability: Stored Cross-Site Scripting (XSS) vulnerability in LeadSquared Suite plugin
+Affected component: LeadSquared Suite plugin <= 0.7.4 versions
+Severity: MEDIUM
+Impact: This issue may lead to unauthorized code execution, potentially al","The CRM and Lead Management by vcita plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 2.7.0. This is due to missing nonce validation in the vcita-callback.php file. This makes it possible for unauthenticated attackers to modify the plugin's settings ",5.36
+5123 5300 1080 Exynos Mobile,technical,CVE-2023-29092,CVE-2023-29089|CVE-2023-29092|CVE-2023-29085|CVE-2023-29091|CVE-2023-29090,1.0,0.3469,0.313,MODERATE,1,0,"Based on CVE-2023-29089, here is the answer:
+
+Vulnerability: Memory corruption due to insufficient parameter validation while decoding SIP multipart messages.
+Affected component: Samsung Exynos Mobile Processor, Automotive Processor and Modem for Exynos Modem 5123, Exynos Modem 5300, Exynos 980, Exy","An issue was discovered in Exynos Mobile Processor and Modem for Exynos Modem 5123, Exynos Modem 5300, Exynos 980, and Exynos 1080. Binding of a wrong resource can occur due to improper handling of parameters while binding a network interface.",5.38
+scripting sessionName createSessionTerm.php Student Attendance,technical,CVE-2023-41519,CVE-2023-41519|CVE-2023-41521|CVE-2023-41523|CVE-2023-41524|CVE-2023-41522,1.0,0.2388,0.414,MODERATE,1,0,"The vulnerability is a cross-site scripting (XSS) vulnerability. 
+
+Affected component: createSessionTerm.php in the Student Attendance Management System v1.
+
+Severity: MEDIUM.
+
+Impact: The XSS vulnerability could allow an attacker to inject malicious scripts into the system, potentially leading to u",Student Attendance Management System v1 was discovered to contain a cross-site scripting (XSS) vulnerability via the sessionName parameter at createSessionTerm.php.,3.3
+CRITICAL execution XWiki execution XWiki 13.10.11,vuln_type,CVE-2023-29514,CVE-2023-29514|CVE-2023-29211|CVE-2023-27480|CVE-2023-29506|CVE-2023-32069,1.0,0.2571,0.7702,HIGH,1,0,"Based on the provided CVE context:
+
+The answer to the question ""CRITICAL execution XWiki execution XWiki 13.10.11"" is:
+
+* Vulnerability: Remote code execution due to a user with edit rights executing code with programming rights.
+* Affected component: The XWiki Platform, specifically any document wh","XWiki Platform is a generic wiki platform offering runtime services for applications built on top of it. Any user with edit rights on any document (e.g., their own user profile) can execute code with programming rights, leading to remote code execution. This vulnerability has been patched in XWiki 1",5.63
+5d844091f237 SCDC NULL pointer dereference,technical,CVE-2023-53784,CVE-2023-37186|CVE-2023-5441|CVE-2023-53784|CVE-2023-39669|CVE-2023-53399,1.0,0.3459,0.3495,MODERATE,1,0,"Based on the provided CVE context:
+
+The vulnerability is a NULL pointer dereference in the scdc interface. 
+
+Affected component: The Linux kernel.
+
+Severity: UNKNOWN CVSS:nan
+
+Impact: A NULL pointer dereference issue was fixed by having scdc functions access dw-hdmi's current connector pointer inste","In the Linux kernel, the following vulnerability has been resolved:
+
+drm: bridge: dw_hdmi: fix connector access for scdc
+
+Commit 5d844091f237 (""drm/scdc-helper: Pimp SCDC debugs"") changed the scdc
+interface to pick up an i2c adapter from a connector instead. However, in
+the case of dw-hdmi, the wron",7.03
+HIGH v.3.19.1 Eramba Limited Eramba,vuln_type,CVE-2023-36255,CVE-2023-36255|CVE-2023-29838|CVE-2023-43523|CVE-2023-42387|CVE-2023-47217,1.0,0.5263,0.7324,HIGH,1,0,"The HIGH vulnerability in Eramba Enterprise and Community edition v.3.19.1 is a CWE-94 issue that allows a remote attacker to execute arbitrary code via the path parameter in the URL.
+
+Affected Component: Eramba Enterprise and Community edition v.3.19.1
+Severity: HIGH
+Impact: Allows a remote attacke",An issue in Eramba Limited Eramba Enterprise and Community edition v.3.19.1 allows a remote attacker to execute arbitrary code via the path parameter in the URL.,6.37
+HIGH overflow ASUS RT-AC86U’s overflow specific,vuln_type,CVE-2023-28703,CVE-2023-28703|CVE-2023-26242|CVE-2023-28702|CVE-2023-31365|CVE-2023-35087,1.0,0.2454,0.0,LOW,1,0,"Based on the provided CVE context:
+
+1. CVE-2023-28703:
+Vulnerability: Stack-based buffer overflow due to insufficient validation for network packet header length.
+Affected Component: ASUS RT-AC86U's specific cgi function.
+Severity: HIGH
+Impact: A remote attacker with administrator privileges can exp","ASUS RT-AC86U’s specific cgi function has a stack-based buffer overflow vulnerability due to insufficient validation for network packet header length. A remote attacker with administrator privileges can exploit this vulnerability to execute arbitrary system commands, disrupt system or terminate serv",13.43
+4.11.0 escalation Dell Command Configure,technical,CVE-2023-44289,CVE-2023-43086|CVE-2023-44289|CVE-2023-32479|CVE-2023-28068|CVE-2023-44290,1.0,0.4242,0.3167,MODERATE,1,0,"Based on CVE-2023-43086, here is the answer:
+
+The vulnerability is an improper access control vulnerability.
+The affected component is Dell Command | Configure, versions prior to 4.11.0.
+The severity of the vulnerability is HIGH (CVSS:7.3).
+The impact of the vulnerability is that a local malicious u","Dell Command | Configure versions prior to 4.11.0, contain an improper access control vulnerability. A local malicious standard user could potentially exploit this vulnerability while repairing/changing installation, leading to privilege escalation.",4.37
+MEDIUM race condition race condition network,vuln_type,CVE-2023-38537,CVE-2023-4127|CVE-2023-3218|CVE-2023-52720|CVE-2023-0739|CVE-2023-33974,0.0,0.101,0.4338,MODERATE,0,0,"Based on the provided CVE context:
+
+CVE-2023-33974 is a MEDIUM severity vulnerability with a CVSS score of 7.5.
+
+The vulnerability is a CWE-362 Race Condition using Concurrent Execution with Shared Resource.
+
+The affected component is RIOT-OS, an operating system for Internet of Things (IoT) devices",A race condition in a network transport subsystem led to a heap use-after-free issue in established or unsilenced incoming audio/video calls that could have resulted in app termination or unexpected control flow with very low probability.,4.25
+2.4.7-beta1 2.4.6-p2 2.4.5-p4 2.4.4-p5 Cross-Site,technical,CVE-2023-38219,CVE-2023-38218|CVE-2023-49007|CVE-2023-38251|CVE-2023-5901|CVE-2023-26367,0.0,0.0,0.0,LOW,0,1,"Based on the provided CVE context:
+
+* 2.4.7-beta1, 2.4.6-p2, 2.4.5-p4, and 2.4.4-p5:
+ + Vulnerability: Cross-Site Scripting (CWE-79)
+ + Affected component: GitHub repository pkp/pkp-lib
+ + Severity: LOW CVSS:3.5
+ + Impact: Minor application denial-of-service
+
+Insufficient context for a more detailed","Adobe Commerce versions 2.4.7-beta1 (and earlier), 2.4.6-p2 (and earlier), 2.4.5-p4 (and earlier) and 2.4.4-p5 (and earlier) are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Ma",5.73
+Linux Linux kernel following,product,CVE-2023-53195,CVE-2023-53059|CVE-2023-2612|CVE-2023-53004|CVE-2023-33203|CVE-2023-53626,0.0,0.123,0.0,LOW,0,0,"Here are the answers to your questions based on the provided CVE context:
+
+1. What is the vulnerability, and which component of the Linux kernel is affected?
+   - Vulnerability: A kernel data leak from ioctl.
+   - Affected component: The cros_ec_chardev in the platform/chrome part of the Linux kerne","In the Linux kernel, the following vulnerability has been resolved:
+
+mlxsw: minimal: fix potential memory leak in mlxsw_m_linecards_init
+
+The line cards array is not freed in the error path of
+mlxsw_m_linecards_init(), which can lead to a memory leak. Fix by
+freeing the array in the error path, ther",34.2
+Industrial Control Systems Industrial Control,product,CVE-2023-7243,CVE-2023-29464|CVE-2023-7243|CVE-2023-37412|CVE-2023-7244|CVE-2023-46289,1.0,0.1953,0.5512,MODERATE,0,0,"Here are the answers:
+
+[1] 
+- Vulnerability: Information disclosure via crafted malicious packets
+- Affected component: Rockwell Automation PanelView Plus, FactoryTalk Linx
+- Severity: HIGH
+- Impact: An attacker can read data from memory, cause a denial-of-service to FactoryTalk Linx over the common","Industrial Control Systems Network Protocol Parsers (ICSNPP) - Ethercat 
+Zeek Plugin versions d78dda6 and prior are vulnerable to out-of-bounds 
+write while analyzing specific Ethercat datagrams. This could allow an 
+attacker to cause arbitrary code execution.",8.52
+23.1.2 Sensitive data exposed logs,technical,CVE-2023-1786,CVE-2023-1786|CVE-2023-5182|CVE-2023-46215|CVE-2023-38733|CVE-2023-1974,1.0,0.5172,0.3625,MODERATE,1,0,"Based on the provided CVE context:
+
+* Vulnerability: Sensitive data could be exposed in logs of cloud-init before version 23.1.2.
+* Affected Component: Cloud-init
+* Severity: MEDIUM
+* Impact: An attacker could use this information to find hashed passwords and possibly escalate their privilege.
+
+Note",Sensitive data could be exposed in logs of cloud-init before version 23.1.2. An attacker could use this information to find hashed passwords and possibly escalate their privilege.,3.86
+Unauth Reflected Cross-Site Unauth Reflected,product,CVE-2023-47697,CVE-2023-41692|CVE-2023-47549|CVE-2023-41861|CVE-2023-42479|CVE-2023-47510,0.0,0.0,0.0,LOW,0,1,"Here are the answers to your questions based on the provided CVE context:
+
+1. What is the vulnerability? 
+Unauth Reflected Cross-Site Scripting (XSS)
+
+2. Affected component 
+Hennessey Digital Attorney theme <= 3, spider-themes EazyDocs plugin <= 2.3.3 versions, Restrict plugin <= 2.2.4 versions
+
+3. ","Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in WP Event Manager WP Event Manager – Events Calendar, Registrations, Sell Tickets with WooCommerce plugin <= 3.1.39 versions.",5.06
+MEDIUM memory SIMATIC V7.5 SIMATIC V7.5,vuln_type,CVE-2023-52891,CVE-2023-50821|CVE-2023-29575|CVE-2023-48364|CVE-2023-45079|CVE-2023-48363,0.0,0.0,0.0,LOW,0,1,"Based on the provided CVE context, I can answer the question as follows:
+
+Answer: Insufficient context.
+
+The question asks for a MEDIUM memory vulnerability in SIMATIC V7.5, but the relevant information is only available for CVE-2023-50821, which affects SIMATIC WinCC V7.5 (All versions < V7.5 SP2 U","A vulnerability has been identified in SIMATIC Energy Manager Basic (All versions < V7.5), SIMATIC Energy Manager PRO (All versions < V7.5), SIMATIC IPC DiagBase (All versions), SIMATIC IPC DiagMonitor (All versions), SIMIT V10 (All versions), SIMIT V11 (All versions < V11.1). Unified Automation .NE",5.28
+xorg-x11-server XIChangeDeviceProperty RRChangeOutputProperty escalation out-of-bounds,technical,CVE-2023-5367,CVE-2023-5367|CVE-2023-6478|CVE-2023-5380|CVE-2023-6931|CVE-2023-6377,1.0,0.3918,0.4266,MODERATE,1,0,"The vulnerability is an out-of-bounds write flaw in the XIChangeDeviceProperty and RRChangeOutputProperty functions of the xorg-x11-server.
+
+Affected component: xorg-x11-server
+
+Severity: HIGH CVSS: 7.8
+
+Impact: Possible escalation of privileges or denial of service.","A out-of-bounds write flaw was found in the xorg-x11-server. This issue occurs due to an incorrect calculation of a buffer offset when copying data stored in the heap in the XIChangeDeviceProperty function in Xi/xiproperty.c and in RRChangeOutputProperty function in randr/rrproperty.c, allowing for ",2.79
+DriverGenius 9.70.0.346 0x9C406104/0x9C40A108 mydrivers64.sys IOCTL,technical,CVE-2023-1679,CVE-2023-1679|CVE-2023-1676|CVE-2023-1678|CVE-2023-1677|CVE-2023-52271,1.0,0.2286,0.3942,MODERATE,1,0,"Based on the provided CVE context:
+
+The vulnerability is a memory corruption issue.
+
+Affected component: IOCTL Handler in the library mydrivers64.sys of DriverGenius 9.70.0.346.
+
+Severity: MEDIUM (CVSS:5.3)
+
+Impact: Local attack required, may lead to memory corruption.",A vulnerability classified as critical was found in DriverGenius 9.70.0.346. This vulnerability affects the function 0x9C406104/0x9C40A108 in the library mydrivers64.sys of the component IOCTL Handler. The manipulation leads to memory corruption. An attack has to be approached locally. The exploit h,3.45
+macOS 14.1 logic addressed improved,technical,CVE-2023-42861,CVE-2023-42853|CVE-2023-42835|CVE-2023-42924|CVE-2023-41067|CVE-2023-32654,0.0,0.1446,0.3106,MODERATE,0,0,"Based on CVE-2023-42853:
+
+macOS 14.1 logic addressed an issue where an app may be able to access user-sensitive data due to a logic issue. The affected component is not specified in the provided context.
+
+Severity: MEDIUM
+CVSS: 5.5",A logic issue was addressed with improved state management. This issue is fixed in macOS Sonoma 14.1. An attacker with knowledge of a standard user's credentials can unlock another standard user's locked screen on the same Mac.,2.56
+Harman Infotainment CarPlay Harman Infotainment,product,CVE-2023-40292,CVE-2023-40292|CVE-2023-28896|CVE-2023-40291|CVE-2023-39075|CVE-2023-40293,1.0,0.0569,0.3179,MODERATE,0,0,"Here are the answers to your questions based on the provided CVE context:
+
+[1] 
+- Vulnerability: Discloses IP address via CarPlay CTRL packets.
+- Affected Component: Harman Infotainment
+- Severity: MEDIUM
+- Impact: The vulnerability allows attackers to potentially obtain sensitive information about ",Harman Infotainment 20190525031613 and later discloses the IP address via CarPlay CTRL packets.,10.87
+escalation execution exploitation.Product AndroidVersions Android-11,technical,CVE-2023-20967,CVE-2023-20963|CVE-2023-21124|CVE-2023-20957|CVE-2023-20909|CVE-2023-21122,0.0,0.1488,0.3819,MODERATE,0,0,"Based on the provided CVE context:
+
+For CVE-2023-20963:
+- Vulnerability: Possible parcel mismatch leading to local escalation of privilege.
+- Affected Component: WorkSource.
+- Severity: HIGH
+- Impact: Local escalation of privilege with no additional execution privileges needed.
+
+For CVE-2023-21124:
+","In avdt_scb_hdl_pkt_no_frag of avdt_scb_act.cc, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android",9.12
+V23Q3 vulnerability been identified Spectrum,technical,CVE-2023-38557,CVE-2023-38557|CVE-2023-5028|CVE-2023-44120|CVE-2023-6646|CVE-2023-32267,1.0,0.4932,0.3558,MODERATE,1,0,"Based on CVE-2023-38557:
+
+The vulnerability is an improper access right assignment to the update script.
+Affected component: Spectrum Power 7
+Severity: HIGH
+Impact: An authenticated local attacker can inject arbitrary code and escalate privileges.",A vulnerability has been identified in Spectrum Power 7 (All versions < V23Q3). The affected product assigns improper access rights to the update script. This could allow an authenticated local attacker to inject arbitrary code and escalate privileges.,3.15
+TensorFlow 2.12.0 2.11.1 memory execution,technical,CVE-2023-25668,CVE-2023-25668|CVE-2023-25664|CVE-2023-25662|CVE-2023-25658|CVE-2023-25673,1.0,0.3857,0.447,MODERATE,1,0,"Based on CVE-2023-25668:
+
+TensorFlow 2.12.0 and 2.11.1 are vulnerable to a critical heap memory access issue, leading to a crash or remote code execution.
+
+Affected component: TensorFlow (specifically, the heap memory access vulnerability in versions prior to 2.12.0 and 2.11.1)
+
+Severity: CRITICAL
+
+","TensorFlow is an open source platform for machine learning. Attackers using Tensorflow prior to 2.12.0 or 2.11.1 can access heap memory which is not in the control of user, leading to a crash or remote code execution. The fix will be included in TensorFlow version 2.12.0 and will also cherrypick thi",4.44
+HIGH JSONUtil thru cause denial,vuln_type,CVE-2023-34615,CVE-2023-34615|CVE-2023-34623|CVE-2023-5072|CVE-2023-34609|CVE-2023-39685,1.0,0.6154,0.7706,HIGH,1,0,"The HIGH JSONUtil thru 5.0 causes a denial of service or other unspecified impacts via crafted object that uses cyclic dependencies.
+
+- Vulnerability: Denial of Service
+- Affected Component: JSONUtil
+- Severity: HIGH (CVSS:7.5)
+- Impact: Denial of Service",An issue was discovered JSONUtil thru 5.0 allows attackers to cause a denial of service or other unspecified impacts via crafted object that uses cyclic dependencies.,2.96
+Auto-GPT Running Auto-GPT experimental open-source,product,CVE-2023-37273,CVE-2023-37273|CVE-2023-37274|CVE-2023-37275|CVE-2023-32004|CVE-2023-31124,1.0,0.16,0.2966,MODERATE,0,0,"Here are the answers to your questions based on the provided CVE context:
+
+[1] CVE-2023-37273
+Vulnerability: A vulnerability exists in the `execute_python_file` and `execute_python_code` commands that allows a malicious custom Python code to overwrite the `docker-compose.yml` file, potentially gaini",Auto-GPT is an experimental open-source application showcasing the capabilities of the GPT-4 language model. Running Auto-GPT version prior to 0.4.3 by cloning the git repo and executing `docker compose run auto-gpt` in the repo root uses a different docker-compose.yml file from the one suggested in,17.37
+MEDIUM scripting VeridiumID 3.5.0 scripting stored,vuln_type,CVE-2023-45552,CVE-2023-45552|CVE-2023-44040|CVE-2023-44038|CVE-2023-3073|CVE-2023-23829,1.0,0.5047,0.3303,MODERATE,1,0,"Based on the provided CVE context:
+
+The vulnerability is a Stored Cross-Site Scripting (XSS) vulnerability.
+
+The affected component is the admin portal in VeridiumID before version 3.5.0.
+
+The severity of this vulnerability is MEDIUM with a CVSS score of 6.5.
+
+The impact of this vulnerability is tha","In VeridiumID before 3.5.0, a stored cross-site scripting (XSS) vulnerability has been discovered in the admin portal that allows an authenticated attacker to take over all accounts by sending malicious input via the self-service portal.",4.33
+118.0.5993.70 bypass HTML Inappropriate implementation,technical,CVE-2023-5485,CVE-2023-5486|CVE-2023-5485|CVE-2023-5483|CVE-2023-25200|CVE-2023-5481,1.0,0.2523,0.7437,HIGH,1,0,"Based on CVE-2023-5486 and CVE-2023-5481, it appears that there are two separate vulnerabilities.
+
+For CVE-2023-5486:
+
+* Vulnerability: Inappropriate implementation in Input
+* Affected component: Security UI
+* Severity: Medium (Chromium security severity: Low)
+* Impact: A remote attacker can spoof s",Inappropriate implementation in Autofill in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to bypass autofill restrictions via a crafted HTML page. (Chromium security severity: Low),6.46
+module.Successful Vulnerability improper access control,technical,CVE-2023-52367,CVE-2023-52380|CVE-2023-52954|CVE-2023-44115|CVE-2023-52543|CVE-2023-52367,1.0,0.2626,0.3579,MODERATE,1,0,"Here are the answers to your question:
+
+1. Module: Email
+Vulnerability: Improper access control
+Severity: MEDIUM
+Impact: May affect service confidentiality.
+
+2. Module: Gallery
+Vulnerability: Improper permission control
+Severity: MEDIUM
+Impact: May affect availability.
+
+3. Module: Booster
+Vulnerabil",Vulnerability of improper access control in the media library module.Successful exploitation of this vulnerability may affect service availability and integrity.,6.09
+WordPress CSRF CSRF Newsletter Popup,technical,CVE-2023-0766,CVE-2023-0766|CVE-2023-52119|CVE-2023-0733|CVE-2023-41730|CVE-2023-30478,1.0,0.1687,0.5208,MODERATE,0,0,"Based on the provided CVE context:
+
+The vulnerability is a Cross-Site Request Forgery (CSRF) issue.
+
+Affected components are:
+
+1. Newsletter Popup WordPress plugin
+2. Icegram Engage – WordPress Lead Generation, Popup Builder, CTA, Optins and Email List Building
+3. SendPress Newsletters plugin
+
+Sever","The Newsletter Popup WordPress plugin through 1.2 does not have CSRF checks in some places, which could allow attackers to make logged in users perform unwanted actions via CSRF attacks as the wp_newsletter_show_localrecord page is not protected with a nonce.",13.77
+Execution 8.0.0 Execution CVSS 8.3.2,technical,CVE-2023-22505,CVE-2023-22505|CVE-2023-42783|CVE-2023-34991|CVE-2023-50883|CVE-2023-21832,1.0,0.19,0.7453,HIGH,0,0,"Based on the provided CVE context:
+
+[1] CVE-2023-22505
+
+* Vulnerability: Remote Code Execution (RCE)
+* Affected Component: Confluence Data Center & Server
+* Severity: HIGH
+* Impact: High impact to confidentiality, high impact to integrity, high impact to availability","This High severity RCE (Remote Code Execution) vulnerability known as CVE-2023-22505 was introduced in version 8.0.0 of Confluence Data Center & Server.
+
+This RCE (Remote Code Execution) vulnerability, with a CVSS Score of 8, allows an authenticated attacker to execute arbitrary code which has high ",5.19
+MEDIUM bypass bypass bypass 2023.1.9 bypass,vuln_type,CVE-2023-1202,CVE-2023-28803|CVE-2023-1202|CVE-2023-37283|CVE-2023-42793|CVE-2023-4001,1.0,0.4286,0.5729,MODERATE,1,0,"Based on the provided CVE context:
+
+The question ""MEDIUM bypass bypass bypass 2023.1.9 bypass"" seems to be incomplete and unclear.
+
+However, I can try to provide an answer based on one of the given CVEs that match the MEDIUM severity and the year 2023.1.9:
+
+CVE-2023-1202 (severity:MEDIUM CVSS:6.5)
+
+","Permission bypass when importing or synchronizing entries in User vault
+
+ in Devolutions Remote Desktop Manager 2023.1.9 and prior versions allows users with restricted rights to bypass entry permission via id collision.",7.58
+SE2022 V222.0MP12 SE2023 V223.0Update2 vulnerability,technical,CVE-2023-24549,CVE-2023-24550|CVE-2023-24566|CVE-2023-24549|CVE-2023-24565|CVE-2023-24581,1.0,0.2328,0.3491,MODERATE,1,0,"Based on the provided CVE context, I can identify the following vulnerabilities:
+
+1. CVE-2023-24550:
+	* Vulnerability: Heap-based buffer overflow while parsing specially crafted PAR files.
+	* Affected Component: Solid Edge SE2022 (All versions < V222.0MP12) and Solid Edge SE2023 (All versions < V223","A vulnerability has been identified in Solid Edge SE2022 (All versions < V222.0MP12), Solid Edge SE2023 (All versions < V223.0Update2). The affected application is vulnerable to stack-based buffer while parsing specially crafted PAR files. An attacker could leverage this vulnerability to execute cod",21.31
+Auth Stored Cross-Site Auth admin+,product,CVE-2023-25490,CVE-2023-33929|CVE-2023-37986|CVE-2023-33210|CVE-2023-34369|CVE-2023-26010,0.0,0.092,0.2711,MODERATE,0,0,"The Auth Stored Cross-Site Scripting (XSS) vulnerability affects plugins with an ""admin+"" authorization level.
+
+Here are the details for each affected plugin:
+
+[1] Joaquín Ruiz Easy Admin Menu plugin <= 1.3 versions:
+- Vulnerability: Stored Cross-Site Scripting (XSS)
+- Affected Component: Easy Admin",Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Eric Teubert Archivist – Custom Archive Templates plugin <= 1.7.4 versions.,16.74
+MEDIUM OTCMS 6.62 VDB-231508 vulnerability,vuln_type,CVE-2023-3237,CVE-2023-3237|CVE-2023-3241|CVE-2023-1797|CVE-2023-3239|CVE-2023-3238,1.0,0.4182,0.5057,MODERATE,1,0,"The MEDIUM OTCMS 6.62 vulnerability (VDB-231508) is a CWE-259 vulnerability that affects the use of hard-coded passwords.
+
+Affected component: The file with unknown code.
+
+Severity: MEDIUM
+
+Impact: The exploit has been disclosed to the public and may be used, indicating that it can be exploited remo",A vulnerability classified as critical was found in OTCMS up to 6.62. This vulnerability affects unknown code. The manipulation of the argument username/password with the input admin leads to use of hard-coded password. The exploit has been disclosed to the public and may be used. The identifier of ,4.75
+SuperWebMailer spamtest_external.php crafted filename,product,CVE-2023-38191,CVE-2023-38191|CVE-2023-38192|CVE-2023-40033|CVE-2023-38194|CVE-2023-2453,1.0,0.1714,0.8168,HIGH,0,0,"Based on CVE-2023-38191, here is the answer:
+
+Vulnerability: Cross-Site Scripting (XSS) via a crafted filename.
+Affected Component: SuperWebMailer's spamtest_external.php.
+Severity: MEDIUM (CVSS: 6.1)
+Impact: An attacker can inject malicious scripts by crafting a specific filename, potentially leadi",An issue was discovered in SuperWebMailer 9.00.0.01710. It allows spamtest_external.php XSS via a crafted filename.,5.04
+GitLab been affecting versions,product,CVE-2023-5995,CVE-2023-2232|CVE-2023-4630|CVE-2023-4522|CVE-2023-5226|CVE-2023-0042,0.0,0.2526,0.0,LOW,1,0,"Here are the answers:
+
+[1] CVE-2023-2232
+- Affected version: All versions starting from 15.10 before 16.1
+- Vulnerability: ReDoS vulnerability in the Jira prefix
+- Severity: MEDIUM (CVSS:6.5)
+- Impact: Not specified
+
+[2] CVE-2023-4630
+- Affected version: 
+  - All versions starting from 10.6 before 1","An issue has been discovered in GitLab EE affecting all versions starting from 16.2 before 16.4.3, all versions starting from 16.5 before 16.5.3, all versions starting from 16.6 before 16.6.1. It was possible for an attacker to abuse the policy bot to gain access to internal projects.",18.25
+Memory while processing event,product,CVE-2023-43513,CVE-2023-43513|CVE-2023-28578|CVE-2023-28541|CVE-2023-43535|CVE-2023-1582,1.0,0.1629,0.2861,MODERATE,0,0,"Here are the answers:
+
+1. CVE-2023-43513:
+   - Vulnerability: Memory corruption while processing the event ring.
+   - Affected Component: HLOS (likely referring to a specific Linux distribution or variant).
+   - Severity: HIGH
+   - Impact: The vulnerability may point to an address in the middle of a","Memory corruption while processing the event ring, the context read pointer is untrusted to HLOS and when it is passed with arbitrary values, may point to address in the middle of ring element.",12.14
+disclosure execution telephony service there,technical,CVE-2023-30866,CVE-2023-33886|CVE-2023-30927|CVE-2023-32789|CVE-2023-30866|CVE-2023-30938,1.0,0.2609,0.3689,MODERATE,1,0,"Based on the provided CVE context, here are the answers:
+
+1. Disclosure of local information without additional execution privileges.
+Affected component: Telephony service.
+Severity: MEDIUM
+Impact: Local information disclosure.
+
+2. Same as above.
+Affected component: Telephony service.
+Severity: MEDI","In telephony service, there is a missing permission check. This could lead to local information disclosure with no additional execution privileges needed.",7.47
+Module Firefox Thunderbird Module load,product,CVE-2023-25739,CVE-2023-25739|CVE-2023-25746|CVE-2023-4584|CVE-2023-1945|CVE-2023-29545,1.0,0.2418,0.268,MODERATE,1,0,"Here's the answer:
+
+The vulnerability is a use-after-free issue in the ScriptLoadContext module of Firefox and Thunderbird.
+
+Affected components:
+- Firefox
+- Thunderbird
+
+Severity: HIGH CVSS: 8.8
+
+Impact: The vulnerability could have been exploited to run arbitrary code, although it was not possible","Module load requests that failed were not being checked as to whether or not they were cancelled causing a use-after-free in <code>ScriptLoadContext</code>. This vulnerability affects Firefox < 110, Thunderbird < 102.8, and Firefox ESR < 102.8.",4.55
+MEDIUM ShopLentor WooCommerce WooLentor WordPress,vuln_type,CVE-2023-7067,CVE-2023-7067|CVE-2023-6327|CVE-2023-0232|CVE-2023-7320|CVE-2023-0231,1.0,0.2426,0.3453,MODERATE,1,0,"Here are the answers:
+
+1. What is the vulnerability?
+The vulnerability is unauthorized modification of data due to a missing capability check on the 'woolentor_template_store' function.
+
+Affected component:
+The ShopLentor – WooCommerce Builder for Elementor & Gutenberg +10 Modules – All in One Solut","The ShopLentor – WooCommerce Builder for Elementor & Gutenberg +10 Modules – All in One Solution (formerly WooLentor) plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'woolentor_template_store' function in all versions up to, and includ",17.74
+LOW SSRF Mattermost fails properly,vuln_type,CVE-2023-3577,CVE-2023-3577|CVE-2023-5194|CVE-2023-50913|CVE-2023-5159|CVE-2023-37230,1.0,0.2442,0.7373,HIGH,1,0,"Based on the provided CVE context:
+
+There are multiple instances of LOW-severity SSRF vulnerabilities in Mattermost. 
+
+The details for each instance are as follows:
+
+1. CVE-2023-3577:
+   - Vulnerability: Fails to properly restrict requests to localhost/intranet during interactive dialog.
+   - Affect","Mattermost fails to properly restrict requests to localhost/intranet during the interactive dialog, which could allow an attacker to perform a limited blind SSRF.",11.24
+CScape_EnvisionRV+0x2e374b Horner Automation Cscape lacks,technical,CVE-2023-32203,CVE-2023-32203|CVE-2023-32539|CVE-2023-31278|CVE-2023-7206|CVE-2023-32545,1.0,0.625,0.4148,MODERATE,1,0,"Based on CVE-2023-32203:
+
+CScape_EnvisionRV+0x2e374b 
+
+* Vulnerability: Lack of proper validation of user-supplied data when parsing project files
+* Affected Component: Horner Automation Cscape
+* Severity: HIGH (CVSS: 7.8)
+* Impact: An attacker could leverage this vulnerability to execute arbitrary ","Horner Automation Cscape lacks proper validation of user-supplied data when parsing project files (e.g., HMI). This could lead to an out-of-bounds write at CScape_EnvisionRV+0x2e374b. An attacker could leverage this vulnerability to execute arbitrary code in the context of the current process.",5.0
+JFinalOA 1.0.2 src/main/java/com/pointlion/mvc/common/model/SysOrg.java injection VDB-220469,technical,CVE-2023-0758,CVE-2023-0758|CVE-2023-5257|CVE-2023-1741|CVE-2023-30325|CVE-2023-1454,1.0,0.4444,0.8351,HIGH,1,0,"The vulnerability in JFinalOA 1.0.2 src/main/java/com/pointlion/mvc/common/model/SysOrg.java is a SQL Injection vulnerability (CWE-89) with a severity of MEDIUM and a CVSS score of 6.3.
+
+Affected component: The manipulation of the argument id leads to SQL injection in the file src/main/java/com/poin",A vulnerability was found in glorylion JFinalOA 1.0.2 and classified as critical. This issue affects some unknown processing of the file src/main/java/com/pointlion/mvc/common/model/SysOrg.java. The manipulation of the argument id leads to sql injection. The attack may be initiated remotely. The exp,6.7
+Rejected ConsultIDs Reason Rejected reason,product,CVE-2023-47008,CVE-2023-4526|CVE-2023-0634|CVE-2023-29034|CVE-2023-22604|CVE-2023-41122,0.0,0.0,0.0,LOW,0,1,"Based on the provided CVEs, I can only provide information for the first one:
+
+[1] CVE-2023-4526
+Severity: UNKNOWN
+CVSS: nan (not enough information to determine severity or impact)
+
+Insufficient context.
+
+The other CVEs have been rejected by their respective CNA's and do not contain sufficient info",Rejected reason: DO NOT USE THIS CVE RECORD. ConsultIDs: none. Reason: This record was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.,4.29
+Injection GitHub 0.5.0b3.dev31 Code repository,technical,CVE-2023-0297,CVE-2023-3393|CVE-2023-1367|CVE-2023-0297|CVE-2023-0435|CVE-2023-0048,1.0,0.1067,0.3877,MODERATE,0,0,"Based on CVE-2023-0297:
+
+The vulnerability is a Code Injection vulnerability (CWE-94).
+
+The affected component is the pyload/pyload GitHub repository.
+
+The severity of this vulnerability is CRITICAL.
+
+The impact of this vulnerability is not explicitly stated in the provided context, but given its CV",Code Injection in GitHub repository pyload/pyload prior to 0.5.0b3.dev31.,4.21
+Rejected reason Record been withdrawn,technical,CVE-2023-52320,CVE-2023-52315|CVE-2023-52319|CVE-2023-52321|CVE-2023-52316|CVE-2023-52320,1.0,0.2418,0.4042,MODERATE,1,0,"Based on the provided CVE context, I can only provide information for the records that have not been rejected. However, since all records have a ""Rejected reason: This CVE Record has been withdrawn by its CNA"" and no additional details are available, I cannot provide specific information about what ",Rejected reason: This CVE Record has been withdrawn by its CNA.,4.7
+Scripting textMessage /src/chatbotapp/LoginServlet.java wliang6 ChatEngine,technical,CVE-2023-30321,CVE-2023-30321|CVE-2023-30319|CVE-2023-30320|CVE-2023-30325|CVE-2023-30322,1.0,0.6557,0.4675,MODERATE,1,0,"The scripting vulnerability in the `textMessage` field of `/src/chatbotapp/LoginServlet.java` in the wliang6 ChatEngine commit fded8e710ad59f816867ad47d7fc4862f6502f3e is a Critical Cross Site Scripting (XSS) vulnerability, CWE-79.
+
+Impact: This vulnerability allows attackers to execute arbitrary co","Cross Site Scripting (XSS) vulnerability in textMessage field in /src/chatbotapp/LoginServlet.java in wliang6 ChatEngine commit fded8e710ad59f816867ad47d7fc4862f6502f3e, allows attackers to execute arbitrary code.",4.63
+addressed improved bounds,product,CVE-2023-32419,CVE-2023-40407|CVE-2023-20790|CVE-2023-42876|CVE-2023-32380|CVE-2023-42928,0.0,0.1353,0.0,LOW,0,0,"Here are the answers:
+
+[1] 
+- What the vulnerability is: Denial-of-service
+- Affected component: macOS Sonoma 14
+- Severity: HIGH
+- Impact: Remote attacker may be able to cause a denial-of-service.
+
+[2] 
+- What the vulnerability is: Out of bounds write due to missing bounds check
+- Affected componen",The issue was addressed with improved bounds checks. This issue is fixed in iOS 16.5 and iPadOS 16.5. A remote attacker may be able to cause arbitrary code execution.,12.17
+SPA-Cart eCommerce 1.9.0.3 scripting VDB-238058,technical,CVE-2023-4547,CVE-2023-4547|CVE-2023-4548|CVE-2023-43148|CVE-2023-50028|CVE-2023-43149,1.0,0.3368,0.3893,MODERATE,1,0,"The vulnerability is a Cross Site Scripting (XSS) issue.
+
+Affected component: The /search file in SPA-Cart eCommerce CMS 1.9.0.3.
+
+Severity: LOW CVSS: 3.5.
+
+Impact: The attack may be launched remotely.",A vulnerability was found in SPA-Cart eCommerce CMS 1.9.0.3. It has been rated as problematic. Affected by this issue is some unknown functionality of the file /search. The manipulation of the argument filter[brandid]/filter[price] leads to cross site scripting. The attack may be launched remotely. ,3.73
+Walchem Intuition Walchem Intuition firmware,product,CVE-2023-38422,CVE-2023-38422|CVE-2023-32202|CVE-2023-27388|CVE-2023-43478|CVE-2023-39429,1.0,0.1358,0.2915,MODERATE,0,0,"Based on the provided CVE context:
+
+1. CVE-2023-38422:
+   - Vulnerability: Missing authentication for some API routes of the management web server.
+   - Affected Component: Walchem Intuition firmware versions prior to v4.21.
+   - Severity: HIGH
+   - Impact: An attacker could download and export sens",Walchem Intuition 9 firmware versions prior to v4.21 are missing authentication for some of the API routes of the management web server. This could allow an attacker to download and export sensitive data.,17.42
+SEL-5037 20230615 SEL-5037 4.5.0.20 Missing,technical,CVE-2023-34392,CVE-2023-34392|CVE-2023-31174|CVE-2023-31173|CVE-2023-50569|CVE-2023-31175,1.0,0.2723,0.2593,MODERATE,1,0,"Here are the answers to your question based on the provided CVE context:
+
+1. [CVE-2023-34392]
+   - Vulnerability: A Missing Authentication for Critical Function
+   - Affected Component: SEL Grid Configurator
+   - Severity: HIGH
+   - Impact: An attacker could run arbitrary commands on managed devices","A Missing Authentication for Critical Function vulnerability in the Schweitzer Engineering Laboratories SEL-5037 SEL Grid Configurator could allow an attacker to run arbitrary commands on managed devices by an authorized device operator.
+
+
+
+
+
+See Instruction Manual Appendix A and Appendix E dated 20",12.54
+JavaSerializationCodec Execution JavaSerializationCodec ZDI-CAN-20291 Inductive,technical,CVE-2023-39476,CVE-2023-39476|CVE-2023-50223|CVE-2023-50220|CVE-2023-39475|CVE-2023-50218,1.0,0.4173,0.5021,MODERATE,1,0,"The vulnerability is a Deserialization of Untrusted Data Remote Code Execution Vulnerability in the JavaSerializationCodec class. 
+
+Affected component: Inductive Automation Ignition.
+
+Severity: CRITICAL with a CVSS score of 9.8.
+
+Impact: The vulnerability allows remote attackers to execute arbitrary",Inductive Automation Ignition JavaSerializationCodec Deserialization of Untrusted Data Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Inductive Automation Ignition. Authentication is not required to exploit this ,5.66
+1.9.4.0 Insecure Storage Sensitive Information,technical,CVE-2023-22687,CVE-2023-37879|CVE-2023-22687|CVE-2023-2665|CVE-2023-32184|CVE-2023-0580,1.0,0.4545,0.3673,MODERATE,1,0,"Based on the provided CVE context:
+
+CVE-2023-22687
+
+* Vulnerability: Insecure Storage of Sensitive Information
+* Affected Component: Jose Mortellaro Freesoul Deactivate Plugins – Plugin manager and cleanup plugin
+* Severity: LOW
+* Impact: The vulnerability allows information elicitation, which is a ",Insecure Storage of Sensitive Information vulnerability in Jose Mortellaro Freesoul Deactivate Plugins – Plugin manager and cleanup plugin <= 1.9.4.0 versions.,4.75
+MEDIUM Scripting 6.5.18 Cross-Site Scripting JavaScript,vuln_type,CVE-2023-48561,CVE-2023-48610|CVE-2023-1239|CVE-2023-48458|CVE-2023-3672|CVE-2023-48607,0.0,0.0,0.0,LOW,0,1,"Based on the provided CVE context:
+
+1. CVE-2023-48610:
+   - Vulnerability: Cross-site Scripting (DOM-based XSS)
+   - Affected Component: Adobe Experience Manager versions 6.5.18 and earlier
+   - Severity: MEDIUM
+   - Impact: Malicious JavaScript content may be executed within the context of a victim",Adobe Experience Manager versions 6.5.18 and earlier are affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim’s browser when they brows,16.78
+SCALANCE LPE9403 V2.1 traversal vulnerability,technical,CVE-2023-27409,CVE-2023-27407|CVE-2023-29054|CVE-2023-27409|CVE-2023-43825|CVE-2023-27410,1.0,0.6239,0.3533,MODERATE,1,0,"Based on the provided CVE context, here is the answer:
+
+The vulnerability is a path traversal vulnerability in the `deviceinfo` binary via the `mac` parameter.
+
+Affected component: SCALANCE LPE9403 device.
+
+Severity: LOW (CVSS: 2.5)
+
+Impact: An authenticated attacker with access to the SSH interface",A vulnerability has been identified in SCALANCE LPE9403 (All versions < V2.1). A path traversal vulnerability was found in the `deviceinfo` binary via the `mac` parameter. This could allow an authenticated attacker with access to the SSH interface on the affected device to read the contents of any f,5.92
+ScanCentral DAST privileges.This ScanCentral DAST,technical,CVE-2023-5913,CVE-2023-5913|CVE-2023-1401|CVE-2023-36903|CVE-2023-0326|CVE-2023-36394,1.0,0.3902,0.74,HIGH,1,0,"The vulnerability in question is related to incorrect privilege assignment.
+
+Here are the details:
+
+* Vulnerability: CWE-266 - Incorrect Privilege Assignment
+* Affected Component: Fortify ScanCentral DAST
+* Severity: HIGH (CVSS score: 8.2)
+* Impact: The vulnerability could be exploited to gain eleva","Incorrect Privilege Assignment vulnerability in opentext Fortify ScanCentral DAST. The vulnerability could be exploited to gain elevated privileges.This issue affects Fortify ScanCentral DAST versions 21.1, 21.2, 21.2.1, 22.1, 22.1.1, 22.2, 23.1.",3.96
+overflow V-Server v4.0.15.0 V-Server v4.0.15.0,technical,CVE-2023-31239,CVE-2023-31239|CVE-2023-47586|CVE-2023-47585|CVE-2023-47584|CVE-2023-23555,1.0,0.7556,0.3868,MODERATE,1,0,"The answer to the question ""overflow"" is:
+
+* Vulnerability: Stack-based buffer overflow
+* Affected Component: V-Server v4.0.15.0 and V-Server Lite v4.0.15.0 and earlier
+* Severity: HIGH (CVSS: 7.8)
+* Impact: An attacker can execute arbitrary code by having a user open a specially crafted VPR file.",Stack-based buffer overflow vulnerability in V-Server v4.0.15.0 and V-Server Lite v4.0.15.0 and earlier allows an attacker to execute arbitrary code by having user open a specially crafted VPR file.,5.31
+DevmemIntChangeSparse overflow escalation execution devicemem_server.c,technical,CVE-2023-21401,CVE-2023-21401|CVE-2023-35659|CVE-2023-21215|CVE-2023-21164|CVE-2023-21165,1.0,0.5455,0.4189,MODERATE,1,0,"Based on CVE-2023-21401, the answer is:
+
+Vulnerability: Possible out of bounds write due to an integer overflow.
+Affected Component: DevmemIntChangeSparse in devicemem_server.c
+Severity: CRITICAL (CVSS: 9.8)
+Impact: Local escalation of privilege in the kernel with no additional execution privileges ","In DevmemIntChangeSparse of devicemem_server.c, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege in the kernel with no additional execution privileges needed. User interaction is not needed for exploitation.",4.54
+HIGH NATS.io 2.10 2023 0.4.0,vuln_type,CVE-2023-46129,CVE-2023-46129|CVE-2023-47090|CVE-2023-22281|CVE-2023-28217|CVE-2023-31125,1.0,0.224,0.2786,MODERATE,1,0,"The answer is:
+
+NATS.io 2.10 has an encryption key handling issue due to a logic mistake in the nkeys library's `xkeys` function. This causes all encryption to be performed with an all-zeros key.
+
+Affected component: NATS.io server (specifically, the nkeys library used for authentication callouts)
+
+","NATS.io is a high performance open source pub-sub distributed communication technology, built for the cloud, on-premise, IoT, and edge computing. The cryptographic key handling library, nkeys, recently gained support for encryption, not just for signing/authentication. This is used in nats-server 2.",6.62
+Visual Studio Denial Service Vulnerability,technical,CVE-2023-38180,CVE-2023-38180|CVE-2023-29331|CVE-2023-36799|CVE-2023-38178|CVE-2023-32030,1.0,0.1188,0.4734,MODERATE,0,0,"Based on the provided CVE context, here are the answers to your question:
+
+1. What is the vulnerability?
+The vulnerability is a Denial of Service (DoS) vulnerability.
+
+2. Affected components:
+   - .NET
+   - Visual Studio
+   - .NET Framework
+   - .NET Core
+   - Visual Studio
+
+3. Severity:
+   - CVE-20",.NET and Visual Studio Denial of Service Vulnerability,7.5
+HDFS 4.1.1 4.1.1 Apache Airflow,technical,CVE-2023-41267,CVE-2023-41267|CVE-2023-28710|CVE-2023-25693|CVE-2023-22884|CVE-2023-25695,1.0,0.4194,0.426,MODERATE,1,0,"For CVE-2023-41267:
+
+* Vulnerability: Incorrect pip package installation
+* Affected Component: Apache Airflow HDFS Provider
+* Severity: HIGH
+* Impact: A potential attacker could claim this package and execute malicious code when installed.
+
+Note that the risk has been neutralized by the Airflow team","In the Apache Airflow HDFS Provider, versions prior to 4.1.1, a documentation info pointed users to an install incorrect pip package. As this package name was unclaimed, in theory, an attacker could claim this package and provide code that would be executed when this package was installed. The Airfl",4.43
+Permission control vulnerability window management,technical,CVE-2023-46756,CVE-2023-52713|CVE-2023-39387|CVE-2023-34163|CVE-2023-46756|CVE-2023-1692,1.0,0.1878,0.4844,MODERATE,0,0,"Here are the answers to your questions based on the provided CVE context:
+
+[1] 
+- What the vulnerability is: Improper permission control in the window management module.
+- Affected component: Window management module.
+- Severity: HIGH
+- Impact: Availability and confidentiality affected.
+
+[2] 
+- What",Permission control vulnerability in the window management module. Successful exploitation of this vulnerability may cause malicious pop-up windows.,10.66
+SourceCodester injection VDB-237558 vulnerability classified,technical,CVE-2023-4437,CVE-2023-4437|CVE-2023-2346|CVE-2023-5276|CVE-2023-5580|CVE-2023-1735,1.0,0.2295,0.0,LOW,1,0,"Based on the provided CVE context, here are the answers:
+
+[1] SourceCodester injection VDB-237558 vulnerability:
+- What the vulnerability is: SQL Injection
+- Affected component: app/ajax/search_sell_paymen_report.php
+- Severity: MEDIUM (CVSS: 6.3)
+- Impact: Remote attack possible, exploit has been d","A vulnerability, which was classified as critical, was found in SourceCodester Inventory Management System 1.0. Affected is an unknown function of the file app/ajax/search_sell_paymen_report.php. The manipulation of the argument customer leads to sql injection. It is possible to launch the attack re",13.87
+D-Link Encryption SetWLanRadioSecurity contain buffer,product,CVE-2023-44839,CVE-2023-44839|CVE-2023-43241|CVE-2023-44833|CVE-2023-41221|CVE-2023-44836,1.0,0.4096,0.4766,MODERATE,1,0,"Based on CVE-2023-44839, the answer is:
+
+The vulnerability is a buffer overflow in the Encryption parameter of the SetWLanRadioSecurity function.
+Affected component: D-Link DIR-823G A1V1.0.2B05 router.
+Severity: HIGH (CVSS: 7.5)
+Impact: Denial of Service (DoS) via a crafted input.",D-Link DIR-823G A1V1.0.2B05 was discovered to contain a buffer overflow via the Encryption parameter in the SetWLanRadioSecurity function. This vulnerability allows attackers to cause a Denial of Service (DoS) via a crafted input.,4.83
+Cross-Site Scripting Plausible.Io 1.3.3 Unauth,technical,CVE-2023-40553,CVE-2023-40553|CVE-2023-47831|CVE-2023-29441|CVE-2023-29430|CVE-2023-36492,1.0,0.4179,0.8116,HIGH,1,0,"The vulnerability is a Reflected Cross-Site Scripting (XSS) vulnerability.
+
+Affected component: Plausible.Io Plausible Analytics plugin <= version 1.3.3.
+
+Severity: MEDIUM (CVSS score: 5.8).
+
+Impact: This vulnerability allows an attacker to inject malicious scripts into the web application, potentia",Unauth. Reflected Cross-Site Scripting (XSS) vulnerability in Plausible.Io Plausible Analytics plugin <= 1.3.3 versions.,4.48
+ESET AUTHORITY\NetworkService Unquoted service path,technical,CVE-2023-7043,CVE-2023-7043|CVE-2023-22282|CVE-2023-54331|CVE-2023-54336|CVE-2023-53965,1.0,0.7042,0.5407,MODERATE,1,0,"The vulnerability is an unquoted service path vulnerability, specifically in the ESET products. 
+
+Affected component: The ESET products.
+
+Severity: LOW CVSS: 3.3
+
+Impact: Allows local attackers to drop a prepared program to a specific location and run on boot with NT AUTHORITY\NetworkService permiss","Unquoted service path in ESET products allows to 
+
+drop a prepared program to a specific location and run on boot with the 
+
+NT AUTHORITY\NetworkService permissions.",4.09
+EdgeRouter 2.0.9-hotfix.6 injection VDB-227651 vulnerability,technical,CVE-2023-2375,CVE-2023-2377|CVE-2023-2378|CVE-2023-2375|CVE-2023-2374|CVE-2023-2376,1.0,0.2626,0.4245,MODERATE,1,0,"Based on the provided CVE context:
+
+The vulnerability is a command injection issue.
+Affected component: Web Management Interface of Ubiquiti EdgeRouter X.
+Severity: MEDIUM
+Impact: The attack can be initiated remotely.",A vulnerability was found in Ubiquiti EdgeRouter X up to 2.0.9-hotfix.6 and classified as critical. This issue affects some unknown processing of the component Web Management Interface. The manipulation of the argument src leads to command injection. The attack may be initiated remotely. The exploit,4.14
+HIGH traversal bypass traversal 2022.2.5 bypass,vuln_type,CVE-2023-35801,CVE-2023-0339|CVE-2023-0511|CVE-2023-35801|CVE-2023-37739|CVE-2023-0582,1.0,0.5217,0.2827,MODERATE,1,0,"Based on the provided CVE context:
+
+CVE-2023-35801
+
+* Vulnerability: Directory traversal
+* Affected Component: Safe Software FME Server
+* Severity: HIGH (CVSS: 8.1)
+* Impact: Allows an attacker to bypass validation when editing a network-based resource connection, resulting in unauthorized reading a","A directory traversal vulnerability in Safe Software FME Server before 2022.2.5 allows an attacker to bypass validation when editing a network-based resource connection, resulting in the unauthorized reading and writing of arbitrary files. Successful exploitation requires an attacker to have access ",6.95
+MEDIUM Edit.This 1.2.7 Missing Authorization,vuln_type,CVE-2023-44148,CVE-2023-49754|CVE-2023-44148|CVE-2023-4124|CVE-2023-47756|CVE-2023-50898,1.0,0.254,0.3605,MODERATE,1,0,"The answer to the question ""MEDIUM Edit"".This 1.2.7 Missing Authorization"" is:
+
+* Vulnerability: Missing Authorization
+* Affected Component: Brainstorm Force Astra Bulk Edit
+* Severity: MEDIUM
+* Impact: CWE-862 (Missing Authorization) vulnerability, which allows exploiting incorrectly configured acc",Missing Authorization vulnerability in Brainstorm Force Astra Bulk Edit.This issue affects Astra Bulk Edit: from n/a through 1.2.7.,3.89
+RIGOL MSO5000 00.01.03.00.03 pass1 interface,technical,CVE-2023-38378,CVE-2023-38379|CVE-2023-38378|CVE-2023-23451|CVE-2023-27517|CVE-2023-53679,1.0,0.4138,0.2769,MODERATE,1,0,"For CVE-2023-38378, the vulnerability is a remote code execution vulnerability due to shell metacharacters in the ""pass1"" field of the webcontrol changepwd.cgi application on the RIGOL MSO5000 digital oscilloscope with firmware 00.01.03.00.03.
+
+Affected component: The web interface of the RIGOL MSO5",The web interface on the RIGOL MSO5000 digital oscilloscope with firmware 00.01.03.00.03 allows remote attackers to execute arbitrary code via shell metacharacters in pass1 to the webcontrol changepwd.cgi application.,13.51
+HIGH OpenVPN 3.4.6 macOS DYLD_INSERT_LIBRARIES,vuln_type,CVE-2023-7224,CVE-2023-7224|CVE-2023-7235|CVE-2023-40299|CVE-2023-6247|CVE-2023-7245,1.0,0.382,0.6312,HIGH,1,0,"The HIGH OpenVPN 3.4.6 macOS DYLD_INSERT_LIBRARIES vulnerability is a CWE-95 vulnerability.
+
+Here's the answer:
+
+* Vulnerability: Local users can execute code in external third-party libraries.
+* Affected Component: OpenVPN Connect version 3.0 through 3.4.6 on macOS.
+* Severity: HIGH
+* Impact: Allow",OpenVPN Connect version 3.0 through 3.4.6 on macOS allows local users to execute code in external third party libraries using the DYLD_INSERT_LIBRARIES environment variable,4.84
+MEDIUM condition SynHsaService condition Missing lock,vuln_type,CVE-2023-5447,CVE-2023-5447|CVE-2023-53838|CVE-2023-53730|CVE-2023-40458|CVE-2023-53233,1.0,0.6829,0.8277,HIGH,1,0,"The vulnerability is a ""Missing lock check"" in the SynHsaService, which can create a use-after-free condition that causes abnormal termination of the service, resulting in denial of service for the Synaptics Hardware Support App.
+
+Affected component: Synaptics Hardware Support App
+Severity: MEDIUM (","Missing lock check in SynHsaService may create a use-after-free condition which causes abnormal termination of the service, resulting in denial of service for the Synaptics Hardware Support App.",15.27
+DataHub DataHub pac4j DataHub {#sb64},technical,CVE-2023-25558,CVE-2023-25558|CVE-2023-47629|CVE-2023-25557|CVE-2023-47640|CVE-2023-25562,1.0,0.1613,0.3836,MODERATE,0,0,"The vulnerability is a Remote Code Execution (RCE) issue due to improper deserialization of Java objects in the `id_token` claims.
+
+Affected component: DataHub frontend
+Severity: HIGH
+Impact: The worst-case scenario is RCE, allowing attackers to execute arbitrary code.","DataHub is an open-source metadata platform. When the DataHub frontend is configured to authenticate via SSO, it will leverage the pac4j library. The processing of the `id_token` is done in an unsafe manner which is not properly accounted for by the DataHub frontend. Specifically, if any of the id_t",5.69
+1.4.2 execution 1.4.2 EcmaScript `NODE_OPTIONS`,technical,CVE-2023-38704,CVE-2023-38704|CVE-2023-26045|CVE-2023-27372|CVE-2023-26127|CVE-2023-41680,1.0,0.256,0.0,LOW,1,0,"I'll answer based on the provided CVE context.
+
+1. What is the vulnerability and which components are affected?
+   - Vulnerability: Remote code execution in cases where an application passes user-supplied input directly to the `import()` function.
+   - Affected component: Import-in-the-middle loader","import-in-the-middle is a module loading interceptor specifically for ESM modules. The import-in-the-middle loader works by generating a wrapper module on the fly. The wrapper uses the module specifier to load the original module and add some wrapping code. Prior to version 1.4.2, it allows for remo",14.01
+HIGH Vulnerability data verification errors,vuln_type,CVE-2023-52549,CVE-2023-52549|CVE-2023-52550|CVE-2023-52551|CVE-2023-44099|CVE-2023-0785,1.0,0.1905,0.4003,MODERATE,0,0,"Based on the provided CVE context, there are multiple vulnerabilities related to ""data verification errors"" in kernel modules. Here are the answers:
+
+1. [CVE-2023-52549] 
+   - Vulnerability: Data verification error
+   - Affected Component: Kernel module
+   - Severity: HIGH
+   - Impact: Successful ex","Vulnerability of data verification errors in the kernel module.
+Impact: Successful exploitation of this vulnerability may affect service confidentiality.",10.87
+HIGH overflow overflow overflow 3.0.2.4679 4.36.11.5859,vuln_type,CVE-2023-6322,CVE-2023-6322|CVE-2023-33204|CVE-2023-34140|CVE-2023-26242|CVE-2023-28478,1.0,0.0,0.0,LOW,0,1,"Here are the answers to your questions based on the provided CVE context:
+
+1. HIGH overflow
+- Vulnerability: Stack-based buffer overflow
+- Affected Component: Roku Indoor Camera SE version 3.0.2.4679 and Wyze Cam v3 version 4.36.11.5859
+- Severity: HIGH
+- Impact: An attacker can make authenticated r",A stack-based buffer overflow vulnerability exists in the message parsing functionality of the Roku Indoor Camera SE version 3.0.2.4679 and Wyze Cam v3 version 4.36.11.5859. A specially crafted message can lead to stack-based buffer overflow. An attacker can make authenticated requests to trigger th,14.53
+JavaScript Socket.IO Socket.IO socket.io parser,product,CVE-2023-32695,CVE-2023-32695|CVE-2023-31125|CVE-2023-37899|CVE-2023-49805|CVE-2023-30591,1.0,0.4274,0.5447,MODERATE,1,0,"The vulnerability is a specially crafted Socket.IO packet that can trigger an uncaught exception on the Socket.IO server, thus killing the Node.js process. 
+
+Affected component: The `socket.io` encoder and decoder written in JavaScript.
+
+Severity: HIGH (CVSS: 7.3)
+
+Impact: A specially crafted Socket","socket.io parser is a socket.io encoder and decoder written in JavaScript complying with version 5 of socket.io-protocol. A specially crafted Socket.IO packet can trigger an uncaught exception on the Socket.IO server, thus killing the Node.js process. A patch has been released in version 4.2.3.",6.09
+disclosure execution telephony service there,technical,CVE-2023-42717,CVE-2023-33886|CVE-2023-30927|CVE-2023-32789|CVE-2023-30866|CVE-2023-30938,0.0,0.2319,0.3689,MODERATE,1,0,"Based on the provided CVE context, here are the answers:
+
+1. Disclosure of local information without additional execution privileges.
+Affected component: Telephony service.
+Severity: MEDIUM
+Impact: Local information disclosure.
+
+2. Same as above.
+Affected component: Telephony service.
+Severity: MEDI","In telephony service, there is a possible missing permission check. This could lead to remote information disclosure no additional execution privileges needed",7.46
+MEDIUM Scripting Scripting XSS.This Improper Neutralization,vuln_type,CVE-2023-52125,CVE-2023-0578|CVE-2023-25790|CVE-2023-52203|CVE-2023-0577|CVE-2023-52195,0.0,0.2295,0.766,HIGH,1,0,"Based on the provided CVE context:
+
+The vulnerability is a MEDIUM severity Cross-Site Scripting (XSS) issue due to Improper Neutralization of Input During Web Page Generation.
+
+Affected components are:
+
+* Book Cites (before 23.01.05)
+* WoodMart (from n/a through 7.0.4)
+* cformsII (from n/a through 1",Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in webvitaly iframe allows Stored XSS.This issue affects iframe: from n/a through 4.8.,7.1
+Cross-Site Scripting Web-Settler 1.7.6 Auth,technical,CVE-2023-24412,CVE-2023-47227|CVE-2023-24412|CVE-2023-38000|CVE-2023-6813|CVE-2023-25979,1.0,0.3333,0.3518,MODERATE,1,0,"Based on CVE-2023-24412:
+
+Cross-Site Scripting Vulnerability:
+The vulnerability is a Stored Cross-Site Scripting (XSS) attack.
+
+Affected Component:
+The plugin ""Web-Settler Image Social Feed"" version <= 1.7.6.
+
+Severity:
+MEDIUM (CVSS: 5.9)
+
+Impact:
+This vulnerability allows an attacker to inject arbi",Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Web-Settler Image Social Feed plugin <= 1.7.6 versions.,5.27
+Certain LaserJet Buffer Certain print,product,CVE-2023-35176,CVE-2023-27972|CVE-2023-35178|CVE-2023-27971|CVE-2023-35177|CVE-2023-35176,1.0,0.2021,0.3703,MODERATE,1,0,"Based on the provided CVE context:
+
+1. The vulnerability is a Buffer Overflow and/or Remote Code Execution.
+Affected component: HP LaserJet Pro print products.
+Severity: CRITICAL (CVSS score: 9.8)
+Impact: Potentially allows an attacker to execute arbitrary code remotely.
+
+2. The vulnerability is a B",Certain HP LaserJet Pro print products are potentially vulnerable to Buffer Overflow and/or Denial of Service when using the backup & restore feature through the embedded web service on the device.,13.83
+HIGH JobSearch WordPress 2.3.4 plugin,vuln_type,CVE-2023-6584,CVE-2023-6584|CVE-2023-6585|CVE-2023-2362|CVE-2023-4933|CVE-2023-1119,1.0,0.6,0.3675,MODERATE,1,0,"The HIGH severity vulnerability in the WP JobSearch WordPress plugin before version 2.3.4 is due to not preventing attackers from logging-in as any users with only knowledge of that user's email address.
+
+- Vulnerability Type: Authentication Bypass
+- Affected Component: Login functionality
+- Severit",The WP JobSearch WordPress plugin before 2.3.4 does not prevent attackers from logging-in as any users with the only knowledge of that user's email address.,4.93
+UNKNOWN race condition race condition 0xdffffc0000000019,vuln_type,CVE-2023-54007,CVE-2023-4127|CVE-2023-3218|CVE-2023-0739|CVE-2023-23039|CVE-2023-53329,0.0,0.0935,0.4095,MODERATE,0,0,"Based on the provided CVE context, it appears that there is an unknown race condition in the Linux kernel's workqueue code. The exact details of the vulnerability are not specified in the provided text.
+
+However, based on the information provided for CVE-2023-53329, which is a related issue, it can ","In the Linux kernel, the following vulnerability has been resolved:
+
+vmci_host: fix a race condition in vmci_host_poll() causing GPF
+
+During fuzzing, a general protection fault is observed in
+vmci_host_poll().
+
+general protection fault, probably for non-canonical address 0xdffffc0000000019: 0000 [#1",12.61
+Henschen Associates court document management,technical,CVE-2023-6376,CVE-2023-6376|CVE-2023-6354|CVE-2023-6375|CVE-2023-6341|CVE-2023-52175,1.0,0.6667,0.4557,MODERATE,1,0,"The vulnerability in Henschen & Associates court document management software is that it does not sufficiently randomize file names of cached documents, allowing a remote, unauthenticated attacker to access restricted documents.
+
+Affected component: File naming mechanism
+Severity: MEDIUM (CVSS: 5.3)","Henschen & Associates court document management software does not sufficiently randomize file names of cached documents, allowing a remote, unauthenticated attacker to access restricted documents.",4.0
+WordPress Injection 10.0 Information Reel,technical,CVE-2023-5429,CVE-2023-5429|CVE-2023-5428|CVE-2023-5412|CVE-2023-1405|CVE-2023-45051,1.0,0.6015,0.4766,MODERATE,1,0,"The vulnerability is a SQL Injection vulnerability.
+
+Affected component: The Information Reel plugin for WordPress, specifically in versions up to and including 10.0.
+
+Severity: HIGH CVSS:8.8
+
+Impact: Authenticated attackers with subscriber-level and above permissions can append additional SQL queri","The Information Reel plugin for WordPress is vulnerable to SQL Injection via the plugin's shortcode in versions up to, and including, 10.0 due to insufficient escaping on the user supplied parameter and lack of sufficient preparation on the existing SQL query. This makes it possible for authenticate",4.47
+MEDIUM WordPress 1.2.1 Model Viewer,vuln_type,CVE-2023-5177,CVE-2023-4311|CVE-2023-5177|CVE-2023-0033|CVE-2023-6821|CVE-2023-23619,1.0,0.1587,0.3297,MODERATE,0,0,"The vulnerability is a Directory Listing issue.
+
+Affected component: Error Log Viewer by BestWebSoft WordPress plugin.
+
+Severity: MEDIUM.
+
+Impact: The plugin allows users to read and download PHP logs without authorization.",The Vrm 360 3D Model Viewer WordPress plugin through 1.2.1 exposes the full path of a file when putting in a non-existent file in a parameter of the shortcode.,3.6
+mp4v2 v2.0.0 overflow MP4GetVideoProfileLevel /src/mp4.cpp,technical,CVE-2023-29584,CVE-2023-29584|CVE-2023-29578|CVE-2023-33718|CVE-2023-33716|CVE-2023-33719,1.0,0.2529,0.5025,MODERATE,1,0,"The vulnerability is a heap buffer overflow.
+
+Affected component: The MP4GetVideoProfileLevel function in the mp4v2 v2.0.0 library at /src/mp4.cpp.
+
+Severity: HIGH CVSS:8.8 (High severity with a high CVSS score, indicating a significant impact on system security).
+
+Impact: This vulnerability allows ",mp4v2 v2.0.0 was discovered to contain a heap buffer overflow via the MP4GetVideoProfileLevel function at /src/mp4.cpp.,4.88
+PrestaShop 8.1.1 8.1.1 open source,technical,CVE-2023-39529,CVE-2023-39527|CVE-2023-39526|CVE-2023-30839|CVE-2023-30545|CVE-2023-25170,0.0,0.2832,0.3589,MODERATE,1,0,"Based on the provided CVE context, I can answer as follows:
+
+PrestaShop 8.1.1 is vulnerable to cross-site scripting through the `isCleanHTML` method due to a lack of proper sanitization (CVE-2023-39527). The affected component is the `isCleanHTML` method.
+
+The severity of this vulnerability is HIGH,","PrestaShop is an open source e-commerce web application. Prior to version 8.1.1, it is possible to delete a file from the server by using the Attachments controller and the Attachments API. Version 8.1.1 contains a patch for this issue. There are no known workarounds.",5.86
+OIDC 1.0.0 1.3.3 1.3.3 user_oidc,technical,CVE-2023-39954,CVE-2023-39954|CVE-2023-32074|CVE-2023-28848|CVE-2023-39953|CVE-2023-36820,1.0,0.1783,0.3255,MODERATE,0,0,"Here are the answers to your question:
+
+1. CVE-2023-39954:
+   - Vulnerability: Impersonation of Nextcloud server towards linked servers.
+   - Affected Component: user_oidc app in Nextcloud.
+   - Severity: LOW
+   - Impact: An attacker with read access to a snapshot of the database can impersonate the","user_oidc provides the OIDC connect user backend for Nextcloud, an open-source cloud platform. Starting in version 1.0.0 and prior to version 1.3.3, an attacker that obtained at least read access to a snapshot of the database can impersonate the Nextcloud server towards linked servers. user_oidc 1.3",15.78
+Execution V2407 V2312 SIMATIC V4.1,technical,CVE-2023-46285,CVE-2023-32736|CVE-2023-46280|CVE-2023-46281|CVE-2023-46282|CVE-2023-46283,0.0,0.1224,0.2966,MODERATE,0,0,"Based on the provided CVE context, I can answer the question as follows:
+
+Execution V2407 V2312 SIMATIC V4.1
+
+The vulnerability is a ""CORS policy issue"" (similar to CVE-2023-46281 and CVE-2023-46282).
+
+Affected component: Opcenter Execution Foundation.
+
+Severity: HIGH CVSS: 7.1.
+
+Impact: An attacker","A vulnerability has been identified in Opcenter Execution Foundation (All versions < V2407), Opcenter Quality (All versions < V2312), SIMATIC PCS neo (All versions < V4.1), SINEC NMS (All versions < V2.0 SP1), Totally Integrated Automation Portal (TIA Portal) V14 (All versions), Totally Integrated A",265.55
+MEDIUM escalation S4CORE escalation Manage Purchase,vuln_type,CVE-2023-40625,CVE-2023-40625|CVE-2023-35870|CVE-2023-41357|CVE-2023-42473|CVE-2023-7271,1.0,0.4598,0.6397,HIGH,1,0,"The vulnerability is a lack of necessary authorization checks for an authenticated user. 
+
+Affected component: Manage Purchase Contracts App
+
+Severity: MEDIUM
+
+Impact: Low impact on confidentiality and integrity, no impact on availability of the system.","S4CORE (Manage Purchase Contracts App) - versions 102, 103, 104, 105, 106, 107, does not perform necessary authorization checks for an authenticated user. This could allow an attacker to perform unintended actions resulting in escalation of privileges which has low impact on confidentiality and inte",4.12
+Cross-Site Forgery CSRF GitHub 2.0.4,technical,CVE-2023-0398,CVE-2023-0735|CVE-2023-4455|CVE-2023-4454|CVE-2023-2228|CVE-2023-5690,0.0,0.3077,0.4432,MODERATE,1,0,"Based on the provided CVE context, I can answer as follows:
+
+Cross-Site Forgery (CSRF) Vulnerability in GitHub Repository wallabag/wallabag prior to 2.0.4.
+
+- **Vulnerability:** Cross-Site Request Forgery (CSRF)
+- **Affected Component:** The wallabag/wallabag GitHub repository, specifically versions",Cross-Site Request Forgery (CSRF) in GitHub repository modoboa/modoboa prior to 2.0.4.,7.28
+REJECT CANDIDATE NUMBER ConsultIDs Rejected,technical,CVE-2023-6752,CVE-2023-52140|CVE-2023-5442|CVE-2023-6734|CVE-2023-52141|CVE-2023-5312,0.0,0.2296,0.3783,MODERATE,1,0,"Based on the provided CVE context, I can only provide information for the following candidates:
+
+[1] CVE-2023-52140
+Since the reason for rejection is ""REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none."" and there are no additional details or consult IDs to reference, I cannot provide any ",Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: CVE-2023-6747. Reason: This candidate is a reservation duplicate of CVE-2023-6747. Notes: All CVE users should reference CVE-2023-6747 instead of this candidate. All references and descriptions in this candidate have been re,17.79
+TRENDnet AC1200 TEW-821DAP v.3.00b06 Trendnet,technical,CVE-2023-51148,CVE-2023-51147|CVE-2023-51148|CVE-2023-51146|CVE-2023-51835|CVE-2023-0618,1.0,0.1429,0.4246,MODERATE,0,0,"Based on the provided CVE context, there are multiple vulnerabilities in the TRENDnet AC1200 TEW-821DAP router.
+
+Here are the answers:
+
+1. Vulnerability: Buffer Overflow
+Affected Component: adm_mod_pwd action (CVE-2023-51147)
+Severity: HIGH CVSS: 8.0
+Impact: Allows an attacker to execute arbitrary c",An issue in TRENDnet Trendnet AC1200 Dual Band PoE Indoor Wireless Access Point TEW-821DAP v.3.00b06 allows an attacker to execute arbitrary code via the 'mycli' command-line interface component.,273.99
+Rejected ConsultIDs Reason Rejected reason,product,CVE-2023-45916,CVE-2023-4526|CVE-2023-0634|CVE-2023-29034|CVE-2023-22604|CVE-2023-41122,0.0,0.0,0.0,LOW,0,1,"Based on the provided CVEs, I can only provide information for the first one:
+
+[1] CVE-2023-4526
+Severity: UNKNOWN
+CVSS: nan (not enough information to determine severity or impact)
+
+Insufficient context.
+
+The other CVEs have been rejected by their respective CNA's and do not contain sufficient info",Rejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.,5.59
+Information Disclosure AvantFAX Information vulnerability,product,CVE-2023-23327,CVE-2023-23327|CVE-2023-32488|CVE-2023-36890|CVE-2023-36908|CVE-2023-36894,1.0,0.3725,0.8538,HIGH,1,0,"The AvantFAX information disclosure vulnerability (CVE-2023-23327) is a CWE-200 vulnerability.
+
+Here are the details:
+
+* Vulnerability type: Information Disclosure
+* Affected component: Backups of sent/received faxes and database backups in AvantFAX 3.3.7
+* Severity: MEDIUM
+* Impact: The vulnerabili","An Information Disclosure vulnerability exists in AvantFAX 3.3.7. Backups of the AvantFAX sent/received faxes, and database backups are stored using the current date as the filename and hosted on the web server without access controls.",6.32
+Cross-Site Scripting InfoSystems ARMember 4.0.2,technical,CVE-2023-33323,CVE-2023-33323|CVE-2023-34447|CVE-2023-47837|CVE-2023-34446|CVE-2023-51356,1.0,0.5,0.3416,MODERATE,1,0,"Based on CVE-2023-33323, here is the answer:
+
+Cross-Site Scripting (XSS) Vulnerability in Repute InfoSystems ARMember plugin <= 4.0.2 versions.
+
+Affected Component: ARMember plugin
+Severity: MEDIUM
+Impact: CWE-79 Auth. (admin+) Stored Cross-Site Scripting vulnerability.",Auth. (admin+) Stored Cross-Site Scripting (XSS) vulnerability in Repute InfoSystems ARMember plugin <= 4.0.2 versions.,5.3
+MEDIUM 3.0.6 3.1.0.beta7 3.0.6 3.1.0.beta7,vuln_type,CVE-2023-38685,CVE-2023-38685|CVE-2023-43122|CVE-2023-37904|CVE-2023-37214|CVE-2023-37906,1.0,0.0,0.0,LOW,0,1,"Here are the answers:
+
+[1] 
+- Vulnerability: Information disclosure about restricted-visibility topic tags
+- Affected component: Discourse discussion platform
+- Severity: MEDIUM
+- Impact: Unauthorized users can obtain information about restricted-visibility topic tags.
+
+[2] 
+- Vulnerability: Informa","Discourse is an open source discussion platform. Prior to version 3.0.6 of the `stable` branch and version 3.1.0.beta7 of the `beta` and `tests-passed` branches, information about restricted-visibility topic tags could be obtained by unauthorized users. The issue is patched in version 3.0.6 of the `",1006.32
+traversal QNAP 5.1.0.2444 20230629 QuTS,technical,CVE-2023-32974,CVE-2023-32974|CVE-2023-34971|CVE-2023-51366|CVE-2023-34973|CVE-2023-51364,1.0,0.4138,0.4408,MODERATE,1,0,"Based on the provided CVE context:
+
+* Vulnerability: Path traversal vulnerability
+* Affected component: QNAP operating system version 5.1.0.2444 build 20230629 (QuTS)
+* Severity: HIGH CVSS:7.5
+* Impact: Allows users to read the contents of unexpected files and expose sensitive data via a network.","A path traversal vulnerability has been reported to affect several QNAP operating system versions. If exploited, the vulnerability could allow users to read the contents of unexpected files and expose sensitive data via a network.
+
+We have already fixed the vulnerability in the following versions:
+Q",7.03
+HIGH confusion memory confusion memory Type,vuln_type,CVE-2023-31322,CVE-2023-31323|CVE-2023-21642|CVE-2023-50433|CVE-2023-31914|CVE-2023-20747,0.0,0.1765,0.0,LOW,0,0,"Based on the provided CVEs:
+
+1. CVE-2023-31323:
+   - Vulnerability: Type confusion in the AMD Secure Processor (ASP)
+   - Affected Component: External Global Memory Interconnect Trusted Agent (XGMI TA)
+   - Severity: UNKNOWN
+   - Impact: Potential loss of confidentiality, integrity, or availability ","Type confusion in the ASP could allow an attacker to pass a malformed argument to the Reliability, Availability, and Serviceability trusted application (RAS TA) potentially leading to a read or write to shared memory resulting in loss of confidentiality, integrity, or availability.",16.47
+CRITICAL injection injection FLIR 1.46.16 NOTE,vuln_type,CVE-2023-51126,CVE-2023-51126|CVE-2023-39013|CVE-2023-51127|CVE-2023-49435|CVE-2023-31717,1.0,0.4211,0.2978,MODERATE,1,0,"The answer to the question is:
+
+* Vulnerability: Command Injection
+* Affected Component: /usr/www/res.php in FLIR AX8 up to 1.46.16
+* Severity: CRITICAL
+* Impact: Allows attackers to run arbitrary commands via the value parameter, potentially leading to unauthorized access or data tampering.",Command injection vulnerability in /usr/www/res.php in FLIR AX8 up to 1.46.16 allows attackers to run arbitrary commands via the value parameter. NOTE: The vendor has stated that with the introduction of firmware version 1.49.16 (Jan 2023) the FLIR AX8 should no longer be affected by the vulnerabili,5.41
+Cross-Site Forgery CSRF Request vulnerability,technical,CVE-2023-35778,CVE-2023-44240|CVE-2023-38579|CVE-2023-26014|CVE-2023-48283|CVE-2023-45763,0.0,0.0769,0.0,LOW,0,0,"Here are the answers to your question based on the provided CVE context:
+
+[1] 
+- What the vulnerability is: Cross-Site Request Forgery (CSRF) vulnerability
+- Affected component: Peter Butler Timthumb Vulnerability Scanner plugin
+- Severity: MEDIUM
+- Impact: The severity of this issue is medium, but ",Cross-Site Request Forgery (CSRF) vulnerability in Neha Goel Recent Posts Slider plugin <= 1.1 versions.,16.67
+Intel(R 14.1.31 escalation Improper access,technical,CVE-2023-32204,CVE-2023-29157|CVE-2023-32204|CVE-2023-25945|CVE-2023-29161|CVE-2023-38135,1.0,0.5814,0.4113,MODERATE,1,0,"Based on the provided CVE context:
+
+The vulnerability is an ""Improper access control"" issue in some Intel(R) OFU software before version 14.1.31.
+
+Affected components are Intel(R) OFU software.
+
+Severity: HIGH (as indicated by CVSS scores of 8.4 and 8.8)
+
+Impact: An authenticated user may potentiall",Improper access control in some Intel(R) OFU software before version 14.1.31 may allow an authenticated user to potentially enable escalation of privilege via local access.,5.54
+UNKNOWN Rejected reason maintain compliance,vuln_type,CVE-2023-22520,CVE-2023-22507|CVE-2023-22525|CVE-2023-22502|CVE-2023-22510|CVE-2023-22520,1.0,0.1333,0.3847,MODERATE,0,0,"Based on the provided CVE context, I can only provide information for the first CVE:
+
+CVE-2023-22507
+
+* Vulnerability: Unknown
+* Affected Component: Unknown
+* Severity: UNKNOWN
+* Impact: Unknown (due to the ""UNKNOWN"" severity and lack of additional information)
+
+The other CVEs have been rejected due","Rejected reason: To maintain compliance with CNA rules, we have rejected this CVE record because it has not been used.",5.23
+Simple Blog Card Simple Blog,product,CVE-2023-4036,CVE-2023-4036|CVE-2023-4035|CVE-2023-2435|CVE-2023-35089|CVE-2023-2436,1.0,0.1202,0.3683,MODERATE,0,0,"Here are the answers:
+
+1. What is the vulnerability?
+The vulnerability is that posts to be displayed via a shortcode can be retrieved by any authenticated users, including subscribers, allowing them to access arbitrary post title and content.
+
+Affected component: Simple Blog Card WordPress plugin
+Se","The Simple Blog Card WordPress plugin before 1.32 does not ensure that posts to be displayed via a shortcode are public, allowing any authenticated users, such as subscriber, to retrieve arbitrary post title and their content such as draft, private and password protected ones",921.5
+Bramble Handshake Protocol Bramble Handshake,product,CVE-2023-33982,CVE-2023-33982|CVE-2023-33980|CVE-2023-46239|CVE-2023-30575|CVE-2023-52523,1.0,0.1742,0.2763,MODERATE,0,0,"Based on the CVE context provided, here are the answers:
+
+[1] CVE-2023-33982
+Vulnerability: Non-forward secure Bramble Handshake Protocol (BHP) in Briar.
+Affected Component: Briar before 1.5.3.
+Severity: MEDIUM (CVSS: 5.9)
+Impact: Eavesdroppers can decrypt network traffic between two accounts if the",Bramble Handshake Protocol (BHP) in Briar before 1.5.3 is not forward secure: eavesdroppers can decrypt network traffic between two accounts if they later compromise both accounts. NOTE: the eavesdropping is typically impractical because BHP runs over an encrypted session that uses the Tor hidden se,949.58
+MEDIUM FlashArray SafeMode flaw exists,vuln_type,CVE-2023-32572,CVE-2023-32572|CVE-2023-28373|CVE-2023-28372|CVE-2023-36628|CVE-2023-4976,1.0,0.3117,0.4263,MODERATE,1,0,"Based on CVE-2023-28373, a MEDIUM-severity vulnerability exists in FlashArray Purity. 
+
+The vulnerability allows an array administrator to configure an external key manager, which can affect the availability of data on the system, including snapshots protected by SafeMode. The severity is MEDIUM wit","A flaw exists in FlashArray Purity wherein under limited circumstances, an array administrator can alter the retention lock of a pgroup and disable pgroup SafeMode protection.",5.33
+race condition GitHub GraphQL GitHub,technical,CVE-2023-6690,CVE-2023-6690|CVE-2023-0739|CVE-2023-6803|CVE-2023-3218|CVE-2023-26144,1.0,0.225,0.4046,MODERATE,1,0,"Here are the answers:
+
+[1] CVE-2023-6690
+- Vulnerability: A race condition in GitHub Enterprise Server allowed an existing admin to maintain permissions on transferred repositories by making a GraphQL mutation to alter repository permissions during the transfer.
+- Affected Component: GitHub Enterpri",A race condition in GitHub Enterprise Server allowed an existing admin to maintain permissions on transferred repositories by making a GraphQL mutation to alter repository permissions during the transfer. This vulnerability affected GitHub Enterprise Server version 3.8.0 and above and was fixed in v,21.74
+99d055b4fd4b Linux kernel following vulnerability,technical,CVE-2023-54209,CVE-2023-54209|CVE-2023-52499|CVE-2023-53004|CVE-2023-53986|CVE-2023-53305,1.0,0.0,0.0,LOW,0,1,"Based on the provided CVE context, I can provide information about the vulnerabilities:
+
+[1] CVE-2023-54209
+- Vulnerability: Debugfs entries leakage in blktrace.
+- Affected component: Linux kernel's block subsystem.
+- Severity: UNKNOWN (CVSS score is nan).
+- Impact: The vulnerability allows for debu","In the Linux kernel, the following vulnerability has been resolved:
+
+block: fix blktrace debugfs entries leakage
+
+Commit 99d055b4fd4b (""block: remove per-disk debugfs files in
+blk_unregister_queue"") moves blk_trace_shutdown() from
+blk_release_queue() to blk_unregister_queue(), this is safe if blktra",861.97
+Transient IKEv2 Informational Transient while,product,CVE-2023-43529,CVE-2023-43529|CVE-2023-33086|CVE-2023-24847|CVE-2023-38710|CVE-2023-21653,1.0,0.2647,0.4223,MODERATE,1,0,"Transient IKEv2 Informational Request Messages Vulnerability:
+
+* What the vulnerability is: A malformed fragment packet can cause a transient denial-of-service (DoS) attack on the device.
+* Affected component: IKEv2 Informational request messages.
+* Severity: HIGH (CVSS: 7.5)
+* Impact: The vulnerabi","Transient DOS while processing IKEv2 Informational request messages, when a malformed fragment packet is received.",5.83
+injection \www\pages\matrix-gui-2.0 vulnerability Varisicte matrix-gui,technical,CVE-2023-26922,CVE-2023-26922|CVE-2023-32261|CVE-2023-32503|CVE-2023-32262|CVE-2023-23677,1.0,0.8451,0.869,HIGH,1,0,"The vulnerability is a SQL injection vulnerability.
+
+Affected component: Varisicte matrix-gui v.2
+
+Severity: CRITICAL
+
+Impact: Allows a remote attacker to execute arbitrary code via the shell_exect parameter to the \www\pages\matrix-gui-2.0 endpoint.",SQL injection vulnerability found in Varisicte matrix-gui v.2 allows a remote attacker to execute arbitrary code via the shell_exect parameter to the \www\pages\matrix-gui-2.0 endpoint.,5.0
+HIGH Forgery JFinalCMS v5.0.0 Cross-Site Forgery,vuln_type,CVE-2023-49375,CVE-2023-49373|CVE-2023-49446|CVE-2023-49382|CVE-2023-49383|CVE-2023-49448,0.0,0.2222,0.4598,MODERATE,1,0,"The vulnerability is a Cross-Site Request Forgery (CSRF) vulnerability.
+
+Affected component: JFinalCMS v5.0.0.
+
+Severity: HIGH.
+
+Impact: The vulnerability allows an attacker to perform actions on behalf of an authenticated user, potentially leading to unauthorized changes or deletions in the CMS.",JFinalCMS v5.0.0 was discovered to contain a Cross-Site Request Forgery (CSRF) vulnerability via /admin/friend_link/update.,4.65
+disclosure macOS 32047 Sensitive information,technical,CVE-2023-41750,CVE-2023-48680|CVE-2023-41750|CVE-2023-34352|CVE-2023-41751|CVE-2023-40425,1.0,0.3214,0.7378,HIGH,1,0,"Based on CVE-2023-41750, the answer is:
+
+Disclosure of sensitive information due to missing authorization.
+
+Affected component: Acronis Agent
+Severity: MEDIUM (CVSS: 5.5)
+Impact: An attacker may be able to access user account emails.","Sensitive information disclosure due to missing authorization. The following products are affected: Acronis Agent (Linux, macOS, Windows) before build 32047.",4.54
+3.4.7 Overflow execution Adobe Dimension,technical,CVE-2023-25903,CVE-2023-25895|CVE-2023-25897|CVE-2023-25890|CVE-2023-25882|CVE-2023-38212,0.0,0.5254,0.3988,MODERATE,1,0,"Based on the provided CVE context:
+
+The vulnerability is a Heap-based Buffer Overflow.
+The affected component is Adobe Dimension versions 3.4.7 (and earlier).
+The severity of this vulnerability is HIGH with a CVSS score of 7.8.
+The impact of this vulnerability is that it could result in arbitrary co",Adobe Dimension versions 3.4.7 (and earlier) is affected by an Integer Overflow or Wraparound vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.,6.39
+FortiAnalyzer 6.4.0 6.4.9 7.0.0 7.0.5,technical,CVE-2023-25611,CVE-2023-23776|CVE-2023-25609|CVE-2023-25608|CVE-2023-25611|CVE-2023-42782,1.0,0.5192,0.3387,MODERATE,1,0,"Based on the provided CVE context:
+
+FortiAnalyzer 6.4.0 - 6.4.9, 7.0.0 - 7.0.5
+
+Vulnerability: Improper neutralization of formula elements in a CSV file vulnerability (CWE-1236)
+
+Affected component: Fortinet FortiAnalyzer
+
+Severity: MEDIUM
+
+Impact: A local attacker can execute unauthorized code or c","A improper neutralization of formula elements in a CSV file vulnerability in Fortinet FortiAnalyzer 6.4.0 - 6.4.9, 7.0.0 - 7.0.5, and 7.2.0 - 7.2.1 allows local attacker to execute unauthorized code or commands via inserting spreadsheet formulas in macro names.",942.88
+Ninja Forms Contact Ninja Forms,product,CVE-2023-1835,CVE-2023-4109|CVE-2023-36505|CVE-2023-1835|CVE-2023-35909|CVE-2023-37979,1.0,0.176,0.4335,MODERATE,0,0,"Here are the answers to the question:
+
+1. What is the vulnerability and which components are affected?
+CVE-2023-4109: HTML Injection security vulnerability in the Ninja Forms Contact Form WordPress plugin.
+Affected component: The entire plugin before version 3.6.26.
+
+2. What is the vulnerability and","The Ninja Forms Contact Form WordPress plugin before 3.6.22 does not properly escape user input before outputting it back in an admin page, leading to a Reflected Cross-Site Scripting which could be used against high privilege users such as admin",15.07
+Premium.This 20.4 Missing Authorization vulnerability,technical,CVE-2023-28775,CVE-2023-37869|CVE-2023-39994|CVE-2023-41805|CVE-2023-28775|CVE-2023-39990,1.0,0.3611,0.478,MODERATE,1,0,"Based on the provided CVE context, I can answer as follows:
+
+The vulnerability is a ""Missing Authorization"" issue, specifically related to CWE-862.
+
+The affected component is Yoast SEO Premium, with versions from n/a through 20.4.
+
+The severity of this vulnerability is MEDIUM, and its CVSS score is ",Missing Authorization vulnerability in Yoast Yoast SEO Premium.This issue affects Yoast SEO Premium: from n/a through 20.4.,5.01
+HIGH flaw Keylime their blocking,vuln_type,CVE-2023-38200,CVE-2023-38200|CVE-2023-38201|CVE-2023-4478|CVE-2023-0105|CVE-2023-3674,1.0,0.506,0.5006,MODERATE,1,0,"The HIGH flaw in Keylime is a remote denial of service against its SSL connections due to their blocking nature. 
+
+- Vulnerability: Exhaustion of available connections
+- Affected Component: Keylime registrar
+- Severity: HIGH
+- Impact: Allows an attacker to exhaust all available connections, potentia","A flaw was found in Keylime. Due to their blocking nature, the Keylime registrar is subject to a remote denial of service against its SSL connections. This flaw allows an attacker to exhaust all available connections.",5.23
+SourceCodester Faculty Evaluation vulnerability classified,product,CVE-2023-2962,CVE-2023-31843|CVE-2023-31845|CVE-2023-31844|CVE-2023-31842|CVE-2023-33439,0.0,0.2098,0.4675,MODERATE,1,0,"The SourceCodester Faculty Evaluation System vulnerability is classified as a SQL Injection vulnerability.
+
+Affected components:
+- The entire system, specifically the /eval/admin/view_faculty.php, /eval/admin/manage_class.php, /eval/admin/manage_subject.php, /eval/index.php?page=edit_faculty&id=, an","A vulnerability, which was classified as critical, has been found in SourceCodester Faculty Evaluation System 1.0. Affected by this issue is some unknown functionality of the file index.php?page=edit_user. The manipulation of the argument id leads to sql injection. The attack may be launched remotel",6.26
+D-Link Change Password Change Password,product,CVE-2023-35736,CVE-2023-34357|CVE-2023-31287|CVE-2023-3069|CVE-2023-5844|CVE-2023-46449,0.0,0.1388,0.3755,MODERATE,0,0,"Unfortunately, I don't see any information about a CVE related to ""D-Link Change Password"". The provided context only includes vulnerabilities from other sources. If you provide more context or clarify which CVE you are referring to, I'll be happy to help.
+
+However, if you'd like to know how to answ",D-Link DAP-2622 DDP Change ID Password New Password Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of D-Link DAP-2622 routers. Authentication is not required to exploit this vul,10.8
+dotCMS NormalizationFilter URLs GitHub https://github.com/dotCMS/core/blob/master/dotCMS/src/main/java/com/dotcms/filters/NormalizationFilter.java#L37,technical,CVE-2023-3042,CVE-2023-3042|CVE-2023-4265|CVE-2023-49215|CVE-2023-52139|CVE-2023-26235,1.0,0.2745,0.8274,HIGH,1,0,"The vulnerability in dotCMS is a flaw in the NormalizationFilter that does not strip double slashes (//) from URLs, potentially enabling bypasses for XSS and access controls.
+
+Affected component: dotCMS
+Severity: MEDIUM
+Impact: The vulnerability allows attackers to bypass security measures, potentia","In dotCMS, versions mentioned, a flaw in the NormalizationFilter does not strip double slashes (//) from URLs, potentially enabling bypasses for XSS and access controls. An example affected URL is  https://demo.dotcms.com//html/portlet/ext/files/edit_text_inc.jsp , which should return a 404 response",7.52
+CRITICAL injection TOTOlink A7100RU V7.4cu.2313_B20191024 injection,vuln_type,CVE-2023-27229,CVE-2023-30053|CVE-2023-24184|CVE-2023-27231|CVE-2023-27229|CVE-2023-24276,1.0,0.2647,0.4849,MODERATE,1,0,"The vulnerability is a Command Injection vulnerability.
+
+Affected Component: TOTOLINK A7100RU V7.4cu.2313_B20191024.
+
+Severity: CRITICAL with CVSS score of 9.8.
+
+Impact: The vulnerability allows an attacker to inject system commands, potentially leading to unauthorized access, data tampering, or eve",TOTOlink A7100RU V7.4cu.2313_B20191024 was discovered to contain a command injection vulnerability via the upBw parameter at /setting/setWanIeCfg.,5.47
+Firefox Android Other origin notification,product,CVE-2023-23600,CVE-2023-23600|CVE-2023-29534|CVE-2023-28159|CVE-2023-6870|CVE-2023-25748,1.0,0.4948,0.4552,MODERATE,1,0,"The vulnerability is related to the storage of origin notification permissions in a way that doesn't take into account the browsing context granted. 
+
+Affected component: Firefox for Android.
+
+Severity: MEDIUM.
+
+Impact: The possibility of notifications being displayed during different browsing sessi","Per origin notification permissions were being stored in a way that didn't take into account what browsing context the permission was granted in. This lead to the possibility of notifications to be displayed during different browsing sessions.
+*This bug only affects Firefox for Android. Other operat",979.88
