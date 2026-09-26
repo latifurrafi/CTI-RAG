@@ -132,3 +132,9 @@ python plot_risk_coverage.py      # Fig. 2
 ```
 
 Builds the 6-page IEEE camera-ready version with the full author list.
+
+## License
+
+The code is released under the [MIT License](LICENSE). The paper files
+(`icoste2026_camera.tex`, `icoste2026_camera.pdf`) are not covered by this license;
+copyright in the paper will be transferred to IEEE on publication.
