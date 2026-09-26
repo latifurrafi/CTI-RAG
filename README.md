@@ -99,7 +99,6 @@ data_loader.py                                           NVD JSON 2.0 parser
 pipeline.py  main.py                                     orchestration + CLI
 evaluate.py                                              metrics (recall, ROUGE-L, ECE)
 figures.py  plot_figure.py  threshold_sweep.py           extra figures and threshold sweep
-icoste2026_camera.tex  icoste2026_camera.pdf             IEEE i-COSTE 2026 camera-ready paper
 analysis_camera_ready.py                                 reproduces every number in the paper
 plot_risk_coverage.py                                    Fig. 2
 figures/fig1_pipeline.drawio  figures/make_fig1_drawio.py  Fig. 1 (draw.io source)
@@ -123,18 +122,15 @@ answer queries.
 
 ## Paper
 
-Accepted at IEEE i-COSTE 2026 (Paper ID ieee-icoste_3738).
+Accepted at IEEE i-COSTE 2026. A link to the published paper will be added here once it
+appears in IEEE Xplore.
 
 ```bash
-pdflatex icoste2026_camera && pdflatex icoste2026_camera
 python analysis_camera_ready.py   # every number in the paper, from results/*.csv
 python plot_risk_coverage.py      # Fig. 2
 ```
 
-Builds the 6-page IEEE camera-ready version with the full author list.
-
 ## License
 
-The code is released under the [MIT License](LICENSE). The paper files
-(`icoste2026_camera.tex`, `icoste2026_camera.pdf`) are not covered by this license;
-copyright in the paper will be transferred to IEEE on publication.
+The code is released under the [MIT License](LICENSE). The license does not cover the
+paper itself, whose copyright will be transferred to IEEE on publication.

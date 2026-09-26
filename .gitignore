@@ -38,3 +38,6 @@ archive/
 Review_Response*.docx
 # Source bundle shared with co-authors (rebuilt from the tracked files).
 *_source.zip
+# Paper: kept local until IEEE publication, then linked with its DOI.
+icoste2026_camera.tex
+icoste2026_camera.pdf
